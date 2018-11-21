@@ -31,12 +31,8 @@ def writerr(x):
     sys.stderr.write(x)
 
 
-if False:
-    HOST = "http://lod-explorer-es-prod.vpn:9200/"  # uber / pre-schema-release
-    INDEX = "full_text_search_staging"
-else:
-    HOST = "http://127.0.0.1:9200/"
-    INDEX = "full_text_search_live"
+HOST = "http://127.0.0.1:9200/"
+INDEX = "full_text_search_live"
 es = Elasticsearch(hosts=HOST)
 
 
@@ -53,7 +49,7 @@ class Command(BaseCommand):
         #     return
 
         counter = 0
-        for doc in SGDocument.objects.all():
+        for doc in SGDocument.objects.filter(title=None):
             if doc.uri:
                 counter += 1
                 print(counter, doc.uri)
@@ -64,17 +60,25 @@ class Command(BaseCommand):
                     doi = jsonld[
                         'http://scigraph.springernature.com/ontologies/core/doi'][
                             0]['@value']
+                except:
+                    doi = None
+                    print("==== ERROR getting DOI / skipping")
 
+                try:
                     year = jsonld[
                         'http://scigraph.springernature.com/ontologies/core/publicationYear'][
                             0]["@value"]
+                except:
+                    year = None
+                    print("==== ERROR getting pubYear - continuing")
+
+                try:
                     title = jsonld[
                         "http://scigraph.springernature.com/ontologies/core/title"][
                             0]["@value"]
-
                 except:
-                    doi, year, title = None, None, None
-                    print("==== ERROR getting data from ES")
+                    title = None
+                    print("==== ERROR getting title / skipping")
                     continue
 
                 try:

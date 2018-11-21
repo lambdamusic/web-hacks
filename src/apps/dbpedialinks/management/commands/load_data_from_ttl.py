@@ -20,14 +20,10 @@ def writerr(x):
 
 
 BASEDIR = "/Users/michele.pasin/Downloads/sci-graph-links-master/named-entity-recognition/produced-data/book-chapters/085confidence/dbpedia-backlinks/"
-FILES = [
-    # ('dbpedia-bl1-085.ttl', 0), ('dbpedia-bl2-085.ttl', 0),
-    #      ('dbpedia-bl3-085.ttl', 0), ('dbpedia-bl4-085.ttl', 0),
-    #      ('dbpedia-bl5-085.ttl', 0), ('dbpedia-bl6-085.ttl', 0),
-    #      ('dbpedia-bl7-085.ttl', 0),
-    # ('dbpedia-bl-085.ttl', 0)
-    ('scigraph-bl-085.ttl', 0)
-]
+FILES = [('dbpedia-bl1-085.ttl', 0), ('dbpedia-bl2-085.ttl', 0),
+         ('dbpedia-bl3-085.ttl', 0), ('dbpedia-bl4-085.ttl', 0),
+         ('dbpedia-bl5-085.ttl', 0), ('dbpedia-bl6-085.ttl', 0),
+         ('dbpedia-bl7-085.ttl', 0), ('dbpedia-bl-085.ttl', 0)]
 
 
 class Command(BaseCommand):
