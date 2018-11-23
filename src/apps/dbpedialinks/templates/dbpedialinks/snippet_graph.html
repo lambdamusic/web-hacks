@@ -5,6 +5,9 @@
 
 <script>
 
+// based on http://bl.ocks.org/eyaler/10586116 
+
+
 var data_local_dynamic = {
   "graph": [],
   "links": [
@@ -55,7 +58,7 @@ var size = d3.scale.pow().exponent(1)
 	
 var force = d3.layout.force()
   .linkDistance(60)
-  .charge(-300)
+  .charge(-500) // was 800
   .size([divWidth,divHeight]);
 
 var default_node_color = "#ccc";
@@ -147,7 +150,6 @@ svg.style("cursor","move");
     // NEW: requery on a dbclick 
     //
     node.on("dblclick", function(d) { d3.event.stopPropagation();
-            alert(d.id);
             window.location.href = "/dbpedialinks/entities/" + d.id;
         });   
 

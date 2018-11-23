@@ -109,25 +109,8 @@ def entities(request, entity_id=None):
 
         # CO-OCCURRING SUBJECTS
 
-        if False:
-            related = []
-
-            for a in articles:
-                related += a.dbentities.all()
-            c = Counter(related)
-
-            # sort manually as the OrderedDict was retuning weird results
-            sorted_related = c.items()
-
-            sorted_related = sorted(
-                sorted_related, key=lambda t: (t[1], t[0].title), reverse=True)
-        else:
-
-            sorted_related = subject.related_subjects(
-            )  # returns a list of tuples {subject: count}
-            # top_20 = sorted_related.items()
-            # top_20 = top_20[:20]
-            # print(type(sorted_related), len(sorted_related))
+        sorted_related = subject.related_subjects(articles_set=articles)
+        # => returns a list of tuples (subject, count)
 
         filters_minus_entity = [f for f in filters if f.id != subject.id]
 
@@ -147,45 +130,6 @@ def entities(request, entity_id=None):
     return render(request, 'dbpedialinks/subject.html', context)
 
 
-def ajax_scigraph(request):
-    """
-    Use SG API to get metadata
-
-    eg http://scigraph.springernature.com/things/articles/0786393400bb0690ffbbc208884e5271
-    """
-
-    sg_id = request.GET.get("id", None)
-    print("ID FOR SCIGRAPH === ", sg_id)
-
-    cl = pyscigraph.SciGraphClient()
-    e = cl.get_entity_from_id(uri=sg_id)
-
-    if e:
-        title = e.title
-        doi = e.doi
-        abstract = e.getValuesForProperty(
-            "http://scigraph.springernature.com/ontologies/core/abstract")
-        if abstract: abstract = abstract[0]
-
-        context = {
-            'article_id': sg_id,
-            'title': title,
-            'doi': doi,
-            'abstract': abstract,
-        }
-
-        return_str = render_block_to_string(
-            'dbpedialinks/snippet_ajax_article_info.html', 'article_info',
-            context)
-
-        return HttpResponse(return_str)
-
-    else:
-        return HttpResponse(
-            "Sorry the request timed out - <a href='%s' target='_blank'>try on SciGraph?</a>"
-            % sg_id)
-
-
 def ajax_tags_info(request):
     """
     Get tag info via ajax
@@ -194,7 +138,7 @@ def ajax_tags_info(request):
     """
 
     sg_id = request.GET.get("id", None)
-    print("ID FOR SCIGRAPH === ", sg_id)
+    print("ID DOCUMENT === ", sg_id)
 
     article = get_object_or_404(SGDocument, uri=sg_id)
 
@@ -241,7 +185,7 @@ def ajax_dbpedia_info(request):
 
 def graph_test(request, entity_id=None):
     """
-    landing page + detail for entities
+    based on http://bl.ocks.org/eyaler/10586116
     """
 
     filters_id = request.GET.getlist("filters")
@@ -284,3 +228,42 @@ def articles(request, article_id=None):
         context = {'article': None}
 
     return render(request, 'dbpedialinks/articles.html', context)
+
+
+def ajax_scigraph(request):
+    """
+    Use SG API to get metadata
+
+    eg http://scigraph.springernature.com/things/articles/0786393400bb0690ffbbc208884e5271
+    """
+
+    sg_id = request.GET.get("id", None)
+    print("ID FOR SCIGRAPH === ", sg_id)
+
+    cl = pyscigraph.SciGraphClient()
+    e = cl.get_entity_from_id(uri=sg_id)
+
+    if e:
+        title = e.title
+        doi = e.doi
+        abstract = e.getValuesForProperty(
+            "http://scigraph.springernature.com/ontologies/core/abstract")
+        if abstract: abstract = abstract[0]
+
+        context = {
+            'article_id': sg_id,
+            'title': title,
+            'doi': doi,
+            'abstract': abstract,
+        }
+
+        return_str = render_block_to_string(
+            'dbpedialinks/snippet_ajax_article_info.html', 'article_info',
+            context)
+
+        return HttpResponse(return_str)
+
+    else:
+        return HttpResponse(
+            "Sorry the request timed out - <a href='%s' target='_blank'>try on SciGraph?</a>"
+            % sg_id)

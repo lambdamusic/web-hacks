@@ -55,6 +55,11 @@
           <a class="btn btn-xs btn-primary" href="https://en.wikipedia.org/wiki/{{entity.uri|url_last_bit}}" target="_blank">View on Wikipedia</a>
 
           <hr> 
+      {% else %}
+          <div class="text-muted">
+          <small>Tip: click on one of the filters above to pivot your search</small>
+          </div>
+          <hr>
       {% endif %}
 
 
@@ -65,6 +70,9 @@
   </div> 
   {% comment %} first row ends {% endcomment %}
 
+
+  {% comment %} **** D3 CHART ***** {% endcomment %}
+
   {% if not filters_minus_entity %}
   <div class="row">
 
@@ -72,8 +80,9 @@
 
 
       <span class="text-muted">Top related subjects:</span>
-      {% comment %} D3 CHART {% endcomment %}
-      <div id="graph_div" class="-col-md-12" style="min-height: 300px; border: lightgray 0.1px solid; overflow: hidden;">
+      
+      
+      <div id="graph_div" class="-col-md-12" style="min-height: 350px; border: lightgray 0.1px solid; overflow: hidden;">
           
 
 
@@ -133,7 +142,7 @@
           <div id="{{a.uri|url_last_bit}}" class="panel-collapse collapse ajax_pub_info_loaded">
             <div class="panel-body ">
               Year: {{a.pubyear}}
-              <br />View: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication {{a.description}}">original publication</a> | <a target="_blank" href="{{a.uri}}" title="View {{a.uri}}">scigraph record</a>
+              <br />View: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication {{a.description}}">DOI: {{a.description}}</a> | <a target="_blank" href="{{a.uri}}" title="View {{a.uri}}">scigraph record</a>
               {% comment %} <br /> DOI: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication">{{a.description}}</a>
               <br /> SciGraph: <a target="_blank" href="{{a.uri}}" title="View SciGraph record">{{a.uri}}</a> {% endcomment %}
               <br />
@@ -247,7 +256,15 @@
 </script> 
 
 
-  {% include 'dbpedialinks/snippet_graph.html' %}
 
+{% if not filters_minus_entity %}
+
+  {% comment %} JS for D3 Graph {% endcomment %}
+
+   {% include 'dbpedialinks/snippet_graph.html' %}
+
+{% endif %}
+  
+  
 
 {% endblock extrajs %}

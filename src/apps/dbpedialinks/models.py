@@ -81,8 +81,10 @@ class DBPediaEntity(models.Model):
         self.totarticles = self.sgdocument_set.count()
         self.save()
 
-    def related_subjects(self, size=99999999):
+    def related_subjects(self, size=99999999, articles_set=None):
         """calc co-occurring subjects across whole publications; returns a dict object containing only subjects with a minimum number of objects:
+
+        <articles_set> : allows to pass manually a queryset for extracting co-occurrence data
 
         >>> c
         Counter({<DBPediaEntity: DBPediaEntity object (83510)>: 1, <DBPediaEntity: DBPediaEntity object (74073)>: 1, <DBPediaEntity: DBPediaEntity object (78827)>: 1, <DBPediaEntity: DBPediaEntity object (62890)>: 1})
@@ -109,11 +111,13 @@ class DBPediaEntity(models.Model):
             out = sorted(out, key=lambda t: (t[1], t[0].title), reverse=True)
             return out[:size]
 
+        if not articles_set:
+            articles_set = self.sgdocument_set.all()
         # approach 1: use co-occurrnce to define relatedness
         # one level recursion - takes a long time so should be precalculated
         # also this produces way too many results
         related = []
-        for a in self.sgdocument_set.all():
+        for a in articles_set:
             related += a.dbentities.exclude(id=self.id)
         out = count_and_reduce(related, size)
         print("Found:", len(out))
