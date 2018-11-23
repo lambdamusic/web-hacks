@@ -25,7 +25,7 @@
 
   <div class="row">
 
-    <div class="col-md-12" style="margin-top: 20px;">
+    <div class="col-md-6" style="margin-top: 20px;">
 
       <h5 class="text-muted">
         <span class="glyphicon glyphicon-tags" aria-hidden="true" style="font-size: 100%;"></span>&nbsp;&nbsp;Subject{{filters|pluralize}}:</h5>
@@ -41,9 +41,6 @@
           {% endfor %} 
         {% endif %}
 
-        &nbsp;&nbsp;<a class="btn btn-xs btn-default" style="-margin-top: 15px;" href="{% url 'dbpedialinks:home' %}">New Search</a>
-
-
       </h1>
       <hr> 
       {% if not filters_minus_entity %}
@@ -57,43 +54,36 @@
           <hr> 
       {% endif %}
 
+        <a class="btn btn-xs btn-default" style="-margin-top: 15px;" href="{% url 'dbpedialinks:home' %}">Reset Search</a>
+
 
     </div>
+
+
+
+    {% comment %} D3 CHART {% endcomment %}
+     <div id="graph_div" class="col-md-6" style="min-height: 400px; border: lightgray 0.1px solid; overflow: hidden;">
+        
+
+
+     </div>
+  
+
+
 
 
 
   </div> 
   {% comment %} first row ends {% endcomment %}
 
-  {% if not filters_minus_entity %}
   <div class="row">
 
-    <div class="col-md-12" style="margin-bottom: 30px;">
+    <div class="col-md-3" style="margin-top: 30px;">
 
-
-      <span class="text-muted">Top related subjects:</span>
-      {% comment %} D3 CHART {% endcomment %}
-      <div id="graph_div" class="-col-md-12" style="min-height: 300px; border: lightgray 0.1px solid; overflow: hidden;">
-          
-
-
-      </div>
-    
-  </div>
-  {% endif %}
-
-  <div class="row">
-
-    <div class="col-md-4" style="margin-top: 30px;">
-
-
-      <h5 class="text-muted">REFINE YOUR SEARCH:
-      <br /><small class="text-muted">The publications listed also have these subjects</small>
-      </h5>
-      
+      <h5 class="text-muted">Co-occurring subjects:</h5>
         <hr>
 
-      {% for k,v in related_subjects %} {% if not k in filters %}
+      {% for k,v in related %} {% if not k in filters %}
 
       <a class="-btn -btn-xs -btn-primary high_contrast" style="margin-bottom: 5px; opacity: {{v|tagcloud_opacity}};" href="{% url 'dbpedialinks:entities_detail' entity.id %}?filters={{k.id}}{% if filters_minus_entity %}{% for f  in  filters_minus_entity %}&filters={{f.id}}{% endfor %}{% endif %}" title="View other articles tagged with this concept">{{k.title}}</a>
       <span color="black;" style="opacity: {{v|tagcloud_opacity}};">&nbsp;{{v}} time{{v|pluralize}}</span>
@@ -105,7 +95,7 @@
 
 
 
-    <div class="col-md-8" style="-margin-top: 20px;">
+    <div class="col-md-9" style="-margin-top: 20px;">
 
       <p class="lead text-muted" style="font-size: 160%;">Publications tagged with {{ filters|length|pluralize:"this,these" }} subject{{filters|pluralize}}:
         <span style="font-size: 150%; color: blue;">{{articles|length}}</span>

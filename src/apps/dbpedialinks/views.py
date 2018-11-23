@@ -91,8 +91,8 @@ def entities(request, entity_id=None):
 
     if entity_id:
 
-        entity = get_object_or_404(DBPediaEntity, pk=int(entity_id))
-        filters = [entity]
+        subject = get_object_or_404(DBPediaEntity, pk=int(entity_id))
+        filters = [subject]
 
         if filters_id:
             filters += [
@@ -105,31 +105,39 @@ def entities(request, entity_id=None):
 
         else:
             # filters = []
-            articles = entity.sgdocument_set.all()
+            articles = subject.sgdocument_set.all()
 
         # CO-OCCURRING SUBJECTS
 
-        related = []
+        if False:
+            related = []
 
-        for a in articles:
-            related += a.dbentities.all()
-        c = Counter(related)
+            for a in articles:
+                related += a.dbentities.all()
+            c = Counter(related)
 
-        # sort manually as the OrderedDict was retuning weird results
-        sorted_related = c.items()
-        # sorted_related = sorted(sorted_related, key=lambda t: t[0].title)
-        sorted_related = sorted(
-            sorted_related, key=lambda t: (t[1], t[0].title), reverse=True)
+            # sort manually as the OrderedDict was retuning weird results
+            sorted_related = c.items()
 
-        filters_minus_entity = [f for f in filters if f.id != entity.id]
+            sorted_related = sorted(
+                sorted_related, key=lambda t: (t[1], t[0].title), reverse=True)
+        else:
+
+            sorted_related = subject.related_subjects(
+            )  # returns a list of tuples {subject: count}
+            # top_20 = sorted_related.items()
+            # top_20 = top_20[:20]
+            # print(type(sorted_related), len(sorted_related))
+
+        filters_minus_entity = [f for f in filters if f.id != subject.id]
 
         context = {
-            'entity': entity,
+            'entity': subject,
             'filters': filters,
             'filters_minus_entity': filters_minus_entity,
             'articles': articles,
-            'related': sorted_related,
-            # 'related' : c.items(),
+            'related_subjects': sorted_related,
+            'related_subjects_graph': sorted_related[:20]
         }
 
     else:
@@ -229,6 +237,29 @@ def ajax_dbpedia_info(request):
     #                                     context)
 
     return HttpResponse(desc)
+
+
+def graph_test(request, entity_id=None):
+    """
+    landing page + detail for entities
+    """
+
+    filters_id = request.GET.getlist("filters")
+
+    if entity_id:
+
+        entity = get_object_or_404(DBPediaEntity, pk=int(entity_id))
+
+        context = {
+            'entity': entity,
+            'related_subjects': entity.related_subjects(),
+        }
+
+    else:
+
+        context = {'entity': None}
+
+    return render(request, 'dbpedialinks/test/graph_test.html', context)
 
 
 # ===========

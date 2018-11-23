@@ -8,6 +8,19 @@ import rdflib
 register = template.Library()
 
 
+@register.filter()
+def powerup(x):
+    """
+    Make sizes more interesting for force directed graph 
+    """
+    try:
+        max = 3000
+        min = 1
+        return (x - min) / (max - min) + 50
+    except:
+        return s
+
+
 @register.filter(name='trim_unwanted_words')
 def trim_unwanted_words(s):
     """
