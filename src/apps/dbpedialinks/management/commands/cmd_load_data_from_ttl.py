@@ -4,7 +4,7 @@
 
 # cd /Users/michele.pasin/dev/knowledge-graph/scigraph-experiments/src
 # workon sg-prototypes
-# python manage.py load_data_from_ttl
+# python manage.py cmd_load_data_from_ttl
 
 import sys
 from django.utils import timezone

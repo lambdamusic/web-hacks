@@ -2,7 +2,7 @@
 
 # https://docs.djangoproject.com/en/1.10/howto/custom-management-commands/
 
-# python manage.py subjects_optimize
+# python manage.py cmd_subjects_optimize
 
 import sys
 from django.core.management.base import BaseCommand

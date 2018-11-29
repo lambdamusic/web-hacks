@@ -10,7 +10,7 @@
 
 # fast enough? otherwise i can try getmany API
 
-# python manage.py enrich_from_elastic
+# python manage.py cmd_enrich_from_elastic
 
 import sys
 import json
