@@ -1,12 +1,24 @@
-
 {% load commontags %}
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+  overflow:hidden;
+   margin:0;
+}
 
+text {
+  font-family: sans-serif;
+  pointer-events: none;
+}
+
+</style>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 
-// based on http://bl.ocks.org/eyaler/10586116 
-
+// based on http://bl.ocks.org/eyaler/10586116
 
 var data_local_dynamic = {
   "graph": [],
@@ -22,7 +34,7 @@ var data_local_dynamic = {
         {% if k.id == entity.id %}
             {"id": {{k.id}}, "size": {{v}}, "score": 0.5 , "title": "{{k.title}}", "type": "circle"},
         {% else %}
-            {"id": {{k.id}}, "size": {{v}}, "score": 0, "title": "{{k.title}}", "type": "circle"},
+            {"id": {{k.id}}, "size": {{v|powerup}}, "score": 0, "title": "{{k.title}}", "type": "circle"},
         {% endif %}
             
       {% endfor %} 
@@ -33,13 +45,8 @@ var data_local_dynamic = {
    "multigraph": false
 } 
 
-var chartDiv = document.getElementById("graph_div");
-// Extract the width and height that was computed by CSS.
-var divWidth = chartDiv.clientWidth;
-var divHeight = chartDiv.clientHeight;
-
-//var w = window.innerWidth;
-//var h = window.innerHeight;
+var w = window.innerWidth;
+var h = window.innerHeight;
 
 var keyc = true, keys = true, keyt = true, keyr = true, keyx = true, keyd = true, keyl = true, keym = true, keyh = true, key1 = true, key2 = true, key3 = true, key0 = true
 
@@ -64,8 +71,8 @@ var size = d3.scale.pow().exponent(1)
 	
 var force = d3.layout.force()
   .linkDistance(100)
-  .charge(-500) // was 800
-  .size([divWidth,divHeight]);
+  .charge(-500)
+  .size([w,h]);
 
 var default_node_color = "#ccc";
 //var default_node_color = "rgb(3,190,100)";
@@ -78,11 +85,9 @@ var max_stroke = 4.5;
 var max_base_node_size = 36;
 var min_zoom = 0.1;
 var max_zoom = 7;
-// append to DOM
-var svg = d3.select("#graph_div").append("svg");
+var svg = d3.select("body").append("svg");
 var zoom = d3.behavior.zoom().scaleExtent([min_zoom,max_zoom])
 var g = svg.append("g");
-//
 svg.style("cursor","move");
 
 // d3.json("graph.json", function(error, graph) {
@@ -151,13 +156,15 @@ svg.style("cursor","move");
         
         .call(force.drag)
 
+        
  
     //
     // NEW: requery on a dbclick 
     //
     node.on("dblclick", function(d) { d3.event.stopPropagation();
-            window.location.href = "/dbpedialinks/entities/" + d.id;
+            window.location.href = "/dbpedialinks/graph_test_two_levels/" + d.id;
         });   
+        
 
 
         
@@ -171,9 +178,11 @@ svg.style("cursor","move");
         
         
     var circle = node.append("path")
-    .attr("d", d3.svg.symbol()
-        .size(function(d) { return Math.PI*Math.pow(size(d.size)||nominal_base_node_size,2); })
-        .type(function(d) { return d.type; }))
+    
+    
+        .attr("d", d3.svg.symbol()
+            .size(function(d) { return Math.PI*Math.pow(size(d.size)||nominal_base_node_size,2); })
+            .type(function(d) { return d.type; }))
     
         .style(tocolor, function(d) { 
         if (isNumber(d.score) && d.score>=0) return color(d.score);
@@ -304,7 +313,6 @@ svg.style("cursor","move");
         });
         
     svg.call(zoom);	  
-    svg.attr("transform","scale(1.5,1.5)");
         
     resize();
     //window.focus();
@@ -325,10 +333,10 @@ svg.style("cursor","move");
         });
     
     function resize() {
-        var width = chartDiv.clientWidth, height = chartDiv.clientHeight;
+        var width = window.innerWidth, height = window.innerHeight;
         svg.attr("width", width).attr("height", height);
         
-        force.size([force.size()[0]+(width-divWidth)/zoom.scale(),force.size()[1]+(height-divHeight)/zoom.scale()]).resume();
+        force.size([force.size()[0]+(width-w)/zoom.scale(),force.size()[1]+(height-h)/zoom.scale()]).resume();
         w = width;
         h = height;
         }

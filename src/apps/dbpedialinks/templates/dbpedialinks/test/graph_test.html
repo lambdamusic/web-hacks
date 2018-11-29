@@ -91,13 +91,13 @@ var data_local2 = {
 var data_local_dynamic = {
   "graph": [],
   "links": [
-      {% for k,v in related_subjects.items %}
+      {% for k,v in related_subjects %}
           { "source": {{entity.id}}, "target": {{k.id}} },
       {% endfor %}          
     //{"source": 0, "target": 1},
     ],
   "nodes": [
-      {% for k,v in related_subjects.items %}
+      {% for k,v in related_subjects %}
           {"id": {{k.id}}, "size": {{v}}, "score": 0, "title": "{{k.title}}", "type": "circle"},
       {% endfor %} 
       {"id": {{entity.id}}, "size": 10, "score": 0.5, "title": "{{entity.title}}", "type": "circle"},

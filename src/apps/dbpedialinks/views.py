@@ -88,44 +88,53 @@ def entities(request, entity_id=None):
     """
 
     filters_id = request.GET.getlist("filters")
+    context = {}
 
-    if entity_id:
+    entity = get_object_or_404(DBPediaEntity, pk=int(entity_id))
 
-        subject = get_object_or_404(DBPediaEntity, pk=int(entity_id))
-        filters = [subject]
+    subject = get_object_or_404(DBPediaEntity, pk=int(entity_id))
+    filters = [subject]
 
-        if filters_id:
-            filters += [
-                DBPediaEntity.objects.get(pk=int(x)) for x in filters_id
-            ]
-            print("===== Filters: ", str(filters))
-            articles = SGDocument.objects.filter()
-            for el in filters:
-                articles = articles.filter(dbentities=el)
-
-        else:
-            # filters = []
-            articles = subject.sgdocument_set.all()
-
-        # CO-OCCURRING SUBJECTS
-
-        sorted_related = subject.related_subjects(articles_set=articles)
-        # => returns a list of tuples (subject, count)
-
-        filters_minus_entity = [f for f in filters if f.id != subject.id]
-
-        context = {
-            'entity': subject,
-            'filters': filters,
-            'filters_minus_entity': filters_minus_entity,
-            'articles': articles,
-            'related_subjects': sorted_related,
-            'related_subjects_graph': sorted_related[:20]
-        }
+    if filters_id:
+        filters += [DBPediaEntity.objects.get(pk=int(x)) for x in filters_id]
+        print("===== Filters: ", str(filters))
+        articles = SGDocument.objects.filter()
+        for el in filters:
+            articles = articles.filter(dbentities=el)
 
     else:
+        articles = subject.sgdocument_set.all()
 
-        context = {'entity': None}
+        #  create data for dataviz
+        SIZE1 = 50  #testing fix sizes: reads well.. but less interesting in the long run
+        SIZE2 = 5
+        # requires new cached objects! 2018-11-29
+        rels = entity.is_subject_in_relations.all()
+        LINKS = [(x.subject1, x.subject2) for x in rels]
+        SEED = [(entity, SIZE1)]
+        NODES = [(x.subject2, SIZE1) for x in rels]  # change with x.score
+        NODES_AND_SEED = NODES + SEED  # add home entity by default, PS score drives color
+        for node in NODES:
+            for x in node[0].is_subject_in_relations.all()[:5]:
+                if x.subject2.id not in [n[0].id for n in NODES_AND_SEED]:
+                    NODES_AND_SEED += [(x.subject2, SIZE2)]
+                LINKS += [(x.subject1, x.subject2)]
+
+        context.update({'nodes': NODES_AND_SEED, 'links': LINKS})
+
+    # CO-OCCURRING SUBJECTS
+    sorted_related = subject.related_subjects(
+        articles_set=articles)  # =>list of tuples (subject, count)
+    filters_minus_entity = [f for f in filters if f.id != subject.id]
+
+    context.update({
+        'entity': subject,
+        'filters': filters,
+        'filters_minus_entity': filters_minus_entity,
+        'articles': articles,
+        'related_subjects': sorted_related,
+        # 'related_subjects_graph': sorted_related[:20]
+    })
 
     return render(request, 'dbpedialinks/subject.html', context)
 
@@ -183,32 +192,57 @@ def ajax_dbpedia_info(request):
     return HttpResponse(desc)
 
 
+# ===========
+# UNUSED AND TESTS
+# ===========
+
+
 def graph_test(request, entity_id=None):
     """
     based on http://bl.ocks.org/eyaler/10586116
     """
 
     filters_id = request.GET.getlist("filters")
-
     if entity_id:
-
         entity = get_object_or_404(DBPediaEntity, pk=int(entity_id))
-
         context = {
             'entity': entity,
-            'related_subjects': entity.related_subjects(),
+            'related_subjects': entity.related_subjects(10),
         }
-
     else:
-
         context = {'entity': None}
-
     return render(request, 'dbpedialinks/test/graph_test.html', context)
 
 
-# ===========
-# UNUSED
-# ===========
+def graph_test_two_levels(request, entity_id=None):
+    """
+    same as above but passing two levels worth of data to display a more interesting graph
+    what changes is the data strucure we send back
+
+    nodes = [list of unique nodes with score]
+    links = [list of unique links tuple]
+    """
+
+    entity = get_object_or_404(DBPediaEntity, pk=int(entity_id))
+
+    SIZE1 = 50  #testing fix sizes: reads well.. but less interesting in the long run
+    SIZE2 = 5
+    # requires new cached objects! 2018-11-29
+    rels = entity.is_subject_in_relations.all()
+    LINKS = [(x.subject1, x.subject2) for x in rels]
+    SEED = [(entity, SIZE1)]
+    NODES = [(x.subject2, x.score) for x in rels]
+    NODES_AND_SEED = NODES + SEED  # add home entity by default, score drives color
+
+    for node in NODES:
+        for x in node[0].is_subject_in_relations.all()[:5]:
+            if x.subject2.id not in [n[0].id for n in NODES_AND_SEED]:
+                NODES_AND_SEED += [(x.subject2, x.score)]
+            LINKS += [(x.subject1, x.subject2)]
+
+    context = {'entity': entity, 'nodes': NODES_AND_SEED, 'links': LINKS}
+
+    return render(request, 'dbpedialinks/test/graph_test.2.html', context)
 
 
 def articles(request, article_id=None):

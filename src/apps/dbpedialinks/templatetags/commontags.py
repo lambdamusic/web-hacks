@@ -14,9 +14,11 @@ def powerup(x):
     Make sizes more interesting for force directed graph 
     """
     try:
-        max = 3000
-        min = 1
-        return (x - min) / (max - min) + 50
+        xmax = 500
+        xmin = 1
+        out = (x - xmin) / (xmax - xmin) * 100
+        print(x, "becomes", out)
+        return out
     except:
         return s
 
