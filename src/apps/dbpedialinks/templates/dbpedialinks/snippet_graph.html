@@ -7,6 +7,18 @@
 
 // based on http://bl.ocks.org/eyaler/10586116 
 
+{% comment %} 
+
+README
+
+* size = actual shape size (10 seems to be the smallest)
+    * the |powerup filter is available too but the results weren't interesting
+* score = determines color via the <color> function: 0 green 0.3 light green 0.5 yellow 1 red
+
+
+{% endcomment %}
+
+
 
 var data_local_dynamic = {
   "graph": [],
@@ -17,16 +29,12 @@ var data_local_dynamic = {
     //{"source": 0, "target": 1},
     ],
   "nodes": [
-      {% for k,v in nodes %}
-        
-        {% if k.id == entity.id %}
-            {"id": {{k.id}}, "size": {{v}}, "score": 0.5 , "title": "{{k.title}}", "type": "circle"},
-        {% else %}
-            {"id": {{k.id}}, "size": {{v}}, "score": 0, "title": "{{k.title}}", "type": "circle"},
-        {% endif %}
-            
+      {% for x in nodes %}
+
+        {"id": {{x.0.id}}, "size": {{x.1}}, "score": {{x.2}} , "title": "{{x.0.title}}", "type": "circle"},
+
       {% endfor %} 
-      {% comment %} {"id": {{entity.id}}, "size": 10, "score": 0.5, "title": "{{entity.title}}", "type": "circle"}, {% endcomment %}
+
     // {"size": 60, "score": 0, "id": "Androsynth", "type": "circle"},
   ],
     "directed": false,

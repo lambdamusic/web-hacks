@@ -106,18 +106,22 @@ def entities(request, entity_id=None):
         articles = subject.sgdocument_set.all()
 
         #  create data for dataviz
-        SIZE1 = 50  #testing fix sizes: reads well.. but less interesting in the long run
-        SIZE2 = 5
-        # requires new cached objects! 2018-11-29
-        rels = entity.is_subject_in_relations.all()
+        SIZE0, SIZE1, SIZE2 = 70, 50, 5
+        green, lightgreen, yellow, lightorange, orange, red = 0, 0.4, 0.5, 0.6, 0.7, 0.8
+        LVL0, LVL1, LVL2 = yellow, green, lightgreen  # templates uses this to determine color
+        # LVL0, LVL1, LVL2 = orange, red, lightorange
+
+        rels = entity.is_subject_in_relations.all(
+        )  # NOTE requires cached objects! 2018-11-29
         LINKS = [(x.subject1, x.subject2) for x in rels]
-        SEED = [(entity, SIZE1)]
-        NODES = [(x.subject2, SIZE1) for x in rels]  # change with x.score
+        SEED = [(entity, SIZE0, LVL0)]
+        NODES = [(x.subject2, SIZE1, LVL1)
+                 for x in rels]  # change with x.score
         NODES_AND_SEED = NODES + SEED  # add home entity by default, PS score drives color
         for node in NODES:
             for x in node[0].is_subject_in_relations.all()[:5]:
                 if x.subject2.id not in [n[0].id for n in NODES_AND_SEED]:
-                    NODES_AND_SEED += [(x.subject2, SIZE2)]
+                    NODES_AND_SEED += [(x.subject2, SIZE2, LVL2)]
                 LINKS += [(x.subject1, x.subject2)]
 
         context.update({'nodes': NODES_AND_SEED, 'links': LINKS})
