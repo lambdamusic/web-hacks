@@ -18,6 +18,10 @@
   <div class="page-header">
     {% comment %} <h1>Home</h1> {% endcomment %}
     Use one of the categories below to start a search
+    {% if search_topic %}&nbsp;<small>(<a href="javascript:$('#q').toggle();">view query</a>)</small>{% endif %}
+  </div>
+  <div id="q" style="display: none;">
+    <pre><code>{{query|linebreaks}}</code></pre>
   </div>
 
 
@@ -52,11 +56,13 @@
       <div class="row" style="margin-top: 60px;">
 
         <div class="col-md-12" style="margin-top: 20px;">
-          <h3>Showing content for: <span style="color: darkred;">{{search_topic|default:"no topic"}}</span> ({{tot}} results)
+          <h3>Showing content for: <span style="color: darkred;">{{search_topic|default:"no topic"}}</span>{% if country %}+&nbsp;<span style="color: goldenrod;">{{country}}</span>{% endif %}
+              ({{tot}} results)
           </h3>        
               <span class="checkbox" >
               <label><input type="checkbox" onclick='handleClick(this);' value=""  {% if restrict %}CHECKED{% endif %}>Restrict to Nature branded journals</label>
              </span>
+               
             <hr>
          </div>
 
@@ -150,12 +156,14 @@
 function handleClick(cb) {
   // alert("Clicked, new value = " + cb.checked);
   if (cb.checked == true) {
-    window.location.href="?s={{search_topic}}&restrict=true"
+    window.location.href="?s={{search_topic}}&restrict=true{% if country %}&country={{country}}{% endif %}"
   } else {
-    window.location.href="?s={{search_topic}}"
+    window.location.href="?s={{search_topic}}{% if country %}&country={{country}}{% endif %}"
   }
 }
 
+
+  
 </script>
 
 {% endblock bodycontent %}

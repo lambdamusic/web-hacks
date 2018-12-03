@@ -95,121 +95,6 @@
     border-radius: 2px;
     }
 
-    /* custom inclusion of right, left and below tabs */
-
-    .tabs-below > .nav-tabs,
-    .tabs-right > .nav-tabs,
-    .tabs-left > .nav-tabs {
-        border-bottom: 0;
-    }
-
-    .tab-content > .tab-pane,
-    .pill-content > .pill-pane {
-        display: none;
-    }
-
-    .tab-content > .active,
-    .pill-content > .active {
-        display: block;
-    }
-
-    .tabs-below > .nav-tabs {
-        border-top: 1px solid #ddd;
-    }
-
-    .tabs-below > .nav-tabs > li {
-        margin-top: -1px;
-        margin-bottom: 0;
-    }
-
-    .tabs-below > .nav-tabs > li > a {
-        -webkit-border-radius: 0 0 4px 4px;
-        -moz-border-radius: 0 0 4px 4px;
-        border-radius: 0 0 4px 4px;
-    }
-
-    .tabs-below > .nav-tabs > li > a:hover,
-    .tabs-below > .nav-tabs > li > a:focus {
-        border-top-color: #ddd;
-        border-bottom-color: transparent;
-    }
-
-    .tabs-below > .nav-tabs > .active > a,
-    .tabs-below > .nav-tabs > .active > a:hover,
-    .tabs-below > .nav-tabs > .active > a:focus {
-        border-color: transparent #ddd #ddd #ddd;
-    }
-
-    .tabs-left > .nav-tabs > li,
-    .tabs-right > .nav-tabs > li {
-        float: none;
-    }
-
-    .tabs-left > .nav-tabs > li > a,
-    .tabs-right > .nav-tabs > li > a {
-        min-width: 74px;
-        margin-right: 0;
-        margin-bottom: 3px;
-    }
-
-    .tabs-left > .nav-tabs {
-        float: left;
-        margin-right: 19px;
-        border-right: 1px solid #ddd;
-    }
-
-    .tabs-left > .nav-tabs > li > a {
-        margin-right: -1px;
-        -webkit-border-radius: 4px 0 0 4px;
-        -moz-border-radius: 4px 0 0 4px;
-        border-radius: 4px 0 0 4px;
-    }
-
-    .tabs-left > .nav-tabs > li > a:hover,
-    .tabs-left > .nav-tabs > li > a:focus {
-        border-color: #eeeeee #dddddd #eeeeee #eeeeee;
-    }
-
-    .tabs-left > .nav-tabs .active > a,
-    .tabs-left > .nav-tabs .active > a:hover,
-    .tabs-left > .nav-tabs .active > a:focus {
-        border-color: #ddd transparent #ddd #ddd;
-        *border-right-color: #ffffff;
-    }
-
-    .tabs-right > .nav-tabs {
-        float: right;
-        margin-left: 19px;
-        border-left: 1px solid #ddd;
-    }
-
-    .tabs-right > .nav-tabs > li > a {
-        margin-left: -1px;
-        -webkit-border-radius: 0 4px 4px 0;
-        -moz-border-radius: 0 4px 4px 0;
-        border-radius: 0 4px 4px 0;
-    }
-
-    .tabs-right > .nav-tabs > li > a:hover,
-    .tabs-right > .nav-tabs > li > a:focus {
-        border-color: #eeeeee #eeeeee #eeeeee #dddddd;
-    }
-
-    .tabs-right > .nav-tabs .active > a,
-    .tabs-right > .nav-tabs .active > a:hover,
-    .tabs-right > .nav-tabs .active > a:focus {
-        border-color: #ddd #ddd #ddd transparent;
-        *border-left-color: #ffffff;
-    }
-
-    .entity_header a {
-        font-size: 10px;
-    }
-
-    .input-v-large {
-        font-size: 25px;
-        height: 60px;
-    }
 
     .code-example {
         overflow: auto;
@@ -240,85 +125,6 @@
         padding-left: 12px;
     }
 
-
-     <!--  STUFF FROM ENTITY_GENERIC.HTML -->
-
-
-
-
-    <!--  slidereveal      -->
-
-    * {
-        box-sizing: content-box;          
-    }
-    .side-panel{
-        background-color: #E6E6E6;
-        padding: 10px;
-        margin-top: 50px;
-        overflow: auto;
-    }
-
-    .side-panel hr {
-        border-top: 1px solid #999999;
-    }
-
-    .side-panel dt {
-        margin-top: 10px;
-    }
-
-    .side-panel dd {
-        display: list-item;
-        list-style-type: disc;
-        margin-left: 18px;
-    }
-
-    .side-panel dt a {
-        color: #999999;
-    }            
-    .side-panel dd a {
-        color: #158cba;
-    }  
-
-    #slide_contents {
-        font-size: 19px;
-    }
-
-
-
-    <!--  details tab   -->
-
-        .details-panel {
-            background-color: #E6E6E6;
-        }
-
-        
-        .details-panel hr {
-            border-top: 1px solid #999999;
-        }
-
-        .details-panel dt {
-            margin-top: 10px;
-        }
-
-        .details-panel dd {
-            display: list-item;
-            list-style-type: disc;
-            margin-left: 18px;
-        }
-        
-        .details-panel a {
-            color: black;
-        }            
-
-        .details-panel {
-        
-            padding-left: 20px;
-            overflow: auto;
-            margin-top: 40px;
-            
-        }
-
-    <!--  END ---- STUFF FROM ENTITY_GENERIC.HTML -->
 
 
 </style>
@@ -379,7 +185,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <footer class="footer">
     <div class="container">
     {% block footer %}
-      <p class="text-muted">Hack Day Zero Hunger 2018-11-02
+      <p class="text-muted">SN Hack Day Zero Hunger 2018-11-02
+      &nbsp;|&nbsp;<a target="_blank" href="https://grandchallenges.springernature.com/">SN Grand Challenges Programme</a>
       </p>
     {% endblock footer %}
     </div>
@@ -398,7 +205,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     <script>
-        var map = new Datamap({element: document.getElementById('map_container')});
+
+        // http://datamaps.github.io/ 
+        var map = new Datamap({element: document.getElementById('map_container'),
+            done: function(datamap) {
+            datamap.svg.selectAll('.datamaps-subunit').on('click', function(geography) {
+                // alert(geography.properties.name);
+                window.location.href="?s={{search_topic}}{% if restrict %}&restrict=true{% endif %}&country=" + geography.properties.name;
+
+            });
+        }});
+
+
+
+    
+
     </script>
 
 

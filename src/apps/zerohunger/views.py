@@ -64,8 +64,8 @@ TOPICS = [
 
 #
 QUERY = """
-    search publications in full_data for "(%s AND SDG) OR (%s AND MDG)"
-where year in [2000:2018] and type="article" %s
+    search publications in full_data for "(%s AND SDG) OR (%s AND MDG) %s"
+    where year in [2000:2018] %s
     return publications [basics-issue-volume-pages+doi+times_cited] sort by times_cited
     return in "facets"
     funders[name + country_name] as "entity_funder" 
@@ -73,6 +73,7 @@ where year in [2000:2018] and type="article" %s
     return in "facets" researchers[all]   
     """
 
+COUNTRY_CLAUSE = " AND %s "
 RESTRICT_CLAUSE = """ and journal.title~"Nature" """
 
 
@@ -81,12 +82,14 @@ def home(request):
     home page (and possibly the only one)
     """
     topics1, topics2 = batches(TOPICS, 2)
-    res, tot = None, None
+    res, tot, q = None, None, None
     searchterm = request.GET.get("s", "")
     restrict = request.GET.get("restrict", "")
+    country = request.GET.get("country", "")
 
     if searchterm:
-        res = do_query(searchterm, restrict)
+        q = construct_query(searchterm, restrict, country)
+        res = do_query(q)
         # print type(res)
         # print res.keys()
         # res = json.loads(res)
@@ -97,25 +100,35 @@ def home(request):
         'topics2': topics2,
         'search_topic': searchterm,
         'restrict': restrict,
+        'country': country,
+        'query': q,
         'res': res,
         'tot': tot
     }
 
-    return render(request, 'zerohunger/home.html', context)
+    return render(request, 'zerohunger/search.html', context)
 
 
-def do_query(s, restrict):
-    """
-    """
-
-    login = {'username': DIMENSIONS_USR, 'password': DIMENSIONS_PSW}
-
+def construct_query(s, restrict, country):
     if restrict:
         r = RESTRICT_CLAUSE
     else:
         r = ""
 
-    query = QUERY % (s, s, r)
+    if country:
+        c = COUNTRY_CLAUSE % country
+    else:
+        c = ""
+
+    query = QUERY % (s, s, c, r)
+    return query
+
+
+def do_query(query):
+    """
+    """
+
+    login = {'username': DIMENSIONS_USR, 'password': DIMENSIONS_PSW}
 
     #   Send credentials to login url to retrieve token. Raise
     #   an error, if the return code indicates a problem.
