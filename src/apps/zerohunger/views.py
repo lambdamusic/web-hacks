@@ -62,16 +62,18 @@ TOPICS = [
 # SDG => Sustainable Development Goals
 # MDG => Millennium Development Goals
 
-# and journal.title~"Nature"
+#
 QUERY = """
     search publications in full_data for "(%s AND SDG) OR (%s AND MDG)"
-where year in [2000:2018] and type="article" 
+where year in [2000:2018] and type="article" %s
     return publications [basics-issue-volume-pages+doi+times_cited] sort by times_cited
     return in "facets"
     funders[name + country_name] as "entity_funder" 
     return in "facets" research_orgs[all]
     return in "facets" researchers[all]   
     """
+
+RESTRICT_CLAUSE = """ and journal.title~"Nature" """
 
 
 def home(request):
@@ -81,9 +83,10 @@ def home(request):
     topics1, topics2 = batches(TOPICS, 2)
     res, tot = None, None
     searchterm = request.GET.get("s", "")
+    restrict = request.GET.get("restrict", "")
 
     if searchterm:
-        res = do_query(searchterm)
+        res = do_query(searchterm, restrict)
         # print type(res)
         # print res.keys()
         # res = json.loads(res)
@@ -93,6 +96,7 @@ def home(request):
         'topics1': topics1,
         'topics2': topics2,
         'search_topic': searchterm,
+        'restrict': restrict,
         'res': res,
         'tot': tot
     }
@@ -100,13 +104,18 @@ def home(request):
     return render(request, 'zerohunger/home.html', context)
 
 
-def do_query(s):
+def do_query(s, restrict):
     """
     """
 
     login = {'username': DIMENSIONS_USR, 'password': DIMENSIONS_PSW}
 
-    query = QUERY % (s, s)
+    if restrict:
+        r = RESTRICT_CLAUSE
+    else:
+        r = ""
+
+    query = QUERY % (s, s, r)
 
     #   Send credentials to login url to retrieve token. Raise
     #   an error, if the return code indicates a problem.

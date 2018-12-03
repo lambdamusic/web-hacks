@@ -52,7 +52,11 @@
       <div class="row" style="margin-top: 60px;">
 
         <div class="col-md-12" style="margin-top: 20px;">
-          <h3>Showing content for: <span style="color: darkred;">{{search_topic|default:"no topic"}}</span> ({{tot}} results)</h3>
+          <h3>Showing content for: <span style="color: darkred;">{{search_topic|default:"no topic"}}</span> ({{tot}} results)
+          </h3>        
+              <span class="checkbox" >
+              <label><input type="checkbox" onclick='handleClick(this);' value=""  {% if restrict %}CHECKED{% endif %}>Restrict to Nature branded journals</label>
+             </span>
             <hr>
          </div>
 
@@ -118,7 +122,7 @@
 
                   <li style="margin-bottom: 10px;">
                     
-                    <span class="lead">{{p.title}}</span><br />&nbsp;<span style="text-transform: uppercase;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>
+                    <span class="lead" style="color: darkgoldenrod;">{{p.title}}</span><br />&nbsp;<span style="text-transform: uppercase;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>
                   
                   </li>
 
@@ -140,5 +144,18 @@
     <div class="container margin50">
     </div> <!-- /container -->
 
+
+<script>
+
+function handleClick(cb) {
+  // alert("Clicked, new value = " + cb.checked);
+  if (cb.checked == true) {
+    window.location.href="?s={{search_topic}}&restrict=true"
+  } else {
+    window.location.href="?s={{search_topic}}"
+  }
+}
+
+</script>
 
 {% endblock bodycontent %}
