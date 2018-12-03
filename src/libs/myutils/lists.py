@@ -1,5 +1,6 @@
 """Utilities for working with lists and sequences."""
 
+
 def flatten(x):
     """
     Returns a single, flat list which contains all elements retrieved
@@ -20,6 +21,7 @@ def flatten(x):
             result.append(el)
     return result
 
+
 def batch_size(items, size):
     """
     Retrieves items in batches of the given size.
@@ -30,7 +32,8 @@ def batch_size(items, size):
     >>> batch_size(l, 5)
     [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]]
     """
-    return [items[i:i+size] for i in xrange(0, len(items), size)]
+    return [items[i:i + size] for i in range(0, len(items), size)]
+
 
 def batches(items, number):
     """
@@ -70,7 +73,7 @@ def batches(items, number):
     >>> batches(l, 12)
     [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [], []]
     """
-    div, mod= divmod(len(items), number)
+    div, mod = divmod(len(items), number)
     if div > 1:
         if mod:
             div += 1
@@ -82,5 +85,6 @@ def batches(items, number):
             return [[item] for item in items]
         else:
             # mod now tells you how many lists of 2 you can fit in
-            return ([items[i*2:(i*2)+2] for i in xrange(0, mod)] +
-                    [[item] for item in items[mod*2:]])
+            return ([items[i * 2:(i * 2) + 2]
+                     for i in xrange(0, mod)] + [[item]
+                                                 for item in items[mod * 2:]])

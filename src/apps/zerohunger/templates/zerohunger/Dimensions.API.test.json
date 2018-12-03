@@ -1,0 +1,1112 @@
+{u'_stats': {u'total_count': 107
+    }, u'publications': [
+        {u'doi': u'10.1038/nature13421', u'title': u'Persistent gut microbiota immaturity in malnourished Bangladeshi children', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Sathish', u'last_name': u'Subramanian', u'researcher_id': u'ur.0650154576.05'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Dhaka', u'name': u'International Centre for Diarrhoeal Disease Research', u'city_id': 1185241, u'country': u'Bangladesh', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'BD', u'state_code': None, u'id': u'grid.414142.6'
+                            }
+                        ], u'first_name': u'Sayeeda', u'last_name': u'Huq', u'researcher_id': u'ur.012746117404.17'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Tanya', u'last_name': u'Yatsunenko', u'researcher_id': u'ur.01161425357.49'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Dhaka', u'name': u'International Centre for Diarrhoeal Disease Research', u'city_id': 1185241, u'country': u'Bangladesh', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'BD', u'state_code': None, u'id': u'grid.414142.6'
+                            }
+                        ], u'first_name': u'Rashidul', u'last_name': u'Haque', u'researcher_id': u'ur.0727062546.20'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Dhaka', u'name': u'International Centre for Diarrhoeal Disease Research', u'city_id': 1185241, u'country': u'Bangladesh', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'BD', u'state_code': None, u'id': u'grid.414142.6'
+                            }
+                        ], u'first_name': u'Mustafa', u'last_name': u'Mahfuz', u'researcher_id': u'ur.01170526652.45'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Dhaka', u'name': u'International Centre for Diarrhoeal Disease Research', u'city_id': 1185241, u'country': u'Bangladesh', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'BD', u'state_code': None, u'id': u'grid.414142.6'
+                            }
+                        ], u'first_name': u'Mohammed A.', u'last_name': u'Alam', u'researcher_id': u'ur.010645616747.72'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            },
+                            {u'city': u'New York', u'name': u'New School', u'city_id': 5128581, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'New York', u'country_code': u'US', u'state_code': u'US-NY', u'id': u'grid.264933.9'
+                            }
+                        ], u'first_name': u'Amber', u'last_name': u'Benezra', u'researcher_id': u'ur.01127045053.49'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Joseph', u'last_name': u'DeStefano', u'researcher_id': u'ur.01175160253.97'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Martin F.', u'last_name': u'Meier'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Brian D.', u'last_name': u'Muegge', u'researcher_id': u'ur.01260403722.50'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Michael J.', u'last_name': u'Barratt', u'researcher_id': u'ur.01303745537.35'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Laura G.', u'last_name': u'VanArendonk', u'researcher_id': u'ur.01145524445.64'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Qunyuan', u'last_name': u'Zhang', u'researcher_id': u'ur.011235420437.05'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Michael A.', u'last_name': u'Province', u'researcher_id': u'ur.014223302737.04'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'William A.', u'last_name': u'Petri', u'researcher_id': u'ur.0704212656.70'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Dhaka', u'name': u'International Centre for Diarrhoeal Disease Research', u'city_id': 1185241, u'country': u'Bangladesh', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'BD', u'state_code': None, u'id': u'grid.414142.6'
+                            }
+                        ], u'first_name': u'Tahmeed', u'last_name': u'Ahmed', u'researcher_id': u'ur.01214117665.39'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Jeffrey I.', u'last_name': u'Gordon', u'researcher_id': u'ur.013751061307.10'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'times_cited': 313, u'year': 2014, u'type': u'article', u'id': u'pub.1052356500'
+        },
+        {u'doi': u'10.1038/nrmicro3120', u'title': u'RNA silencing suppression by plant pathogens: defence, counter-defence and counter-counter-defence', u'journal': {u'id': u'jour.1032854', u'title': u'Nature Reviews Microbiology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Zurich', u'name': u'Swiss Federal Institute of Technology in Zurich', u'city_id': 2657896, u'country': u'Switzerland', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'CH', u'state_code': None, u'id': u'grid.5801.c'
+                            }
+                        ], u'first_name': u'Nathan', u'last_name': u'Pumplin', u'researcher_id': u'ur.0721751613.37'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Zurich', u'name': u'Swiss Federal Institute of Technology in Zurich', u'city_id': 2657896, u'country': u'Switzerland', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'CH', u'state_code': None, u'id': u'grid.5801.c'
+                            }
+                        ], u'first_name': u'Olivier', u'last_name': u'Voinnet', u'researcher_id': u'ur.0667206414.15'
+                    }
+                ]
+            ], u'times_cited': 254, u'year': 2013, u'type': u'article', u'id': u'pub.1045896311'
+        },
+        {u'doi': u'10.1038/nrmicro3117', u'title': u'Geminiviruses: masters at redirecting and reprogramming plant processes', u'journal': {u'id': u'jour.1032854', u'title': u'Nature Reviews Microbiology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Raleigh', u'name': u'North Carolina State University', u'city_id': 4487042, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.40803.3f'
+                            }
+                        ], u'first_name': u'Linda', u'last_name': u'Hanley-Bowdoin', u'researcher_id': u'ur.0775472605.34'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'M\xe1laga', u'name': u'University of Malaga', u'city_id': 2514256, u'country': u'Spain', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'ES', u'state_code': None, u'id': u'grid.10215.37'
+                            }
+                        ], u'first_name': u'Eduardo R.', u'last_name': u'Bejarano', u'researcher_id': u'ur.0616272670.02'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Raleigh', u'name': u'North Carolina State University', u'city_id': 4487042, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.40803.3f'
+                            }
+                        ], u'first_name': u'Dominique', u'last_name': u'Robertson', u'researcher_id': u'ur.01151151367.62'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Faisalabad', u'name': u'National Institute for Biotechnology and Genetic Engineering', u'city_id': 1179400, u'country': u'Pakistan', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'PK', u'state_code': None, u'id': u'grid.419397.1'
+                            }
+                        ], u'first_name': u'Shahid', u'last_name': u'Mansoor', u'researcher_id': u'ur.01227003057.32'
+                    }
+                ]
+            ], u'times_cited': 196, u'year': 2013, u'type': u'article', u'id': u'pub.1020708120'
+        },
+        {u'doi': u'10.1038/nrgastro.2012.239', u'title': u'The impoverished gut\u2014a triple burden of diarrhoea, stunting and chronic disease', u'journal': {u'id': u'jour.1294865', u'title': u'Nature Reviews Gastroenterology & Hepatology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'Richard L', u'last_name': u'Guerrant', u'researcher_id': u'ur.0654012765.04'
+                    },
+                    {u'affiliations': [], u'first_name': u'Mark D', u'last_name': u'DeBoer', u'researcher_id': u'ur.0675746013.96'
+                    },
+                    {u'affiliations': [], u'first_name': u'Sean R', u'last_name': u'Moore', u'researcher_id': u'ur.01163500031.72'
+                    },
+                    {u'affiliations': [], u'first_name': u'Rebecca J', u'last_name': u'Scharf', u'researcher_id': u'ur.01165203400.06'
+                    },
+                    {u'affiliations': [], u'first_name': u'Aldo A M', u'last_name': u'Lima', u'researcher_id': u'ur.012160725257.57'
+                    }
+                ]
+            ], u'times_cited': 154, u'year': 2013, u'type': u'article', u'id': u'pub.1017258745'
+        },
+        {u'doi': u'10.1038/nm.4185', u'title': u'Signals from the gut microbiota to distant organs in physiology and disease', u'journal': {u'id': u'jour.1113716', u'title': u'Nature Medicine'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Gothenburg', u'name': u'University of Gothenburg', u'city_id': 2711537, u'country': u'Sweden', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'SE', u'state_code': None, u'id': u'grid.8761.8'
+                            }
+                        ], u'first_name': u'Bjoern O', u'last_name': u'Schroeder', u'researcher_id': u'ur.0617744025.44'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Gothenburg', u'name': u'University of Gothenburg', u'city_id': 2711537, u'country': u'Sweden', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'SE', u'state_code': None, u'id': u'grid.8761.8'
+                            },
+                            {u'city': u'Copenhagen', u'name': u'University of Copenhagen', u'city_id': 2618425, u'country': u'Denmark', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'DK', u'state_code': None, u'id': u'grid.5254.6'
+                            }
+                        ], u'first_name': u'Fredrik', u'last_name': u'B\xe4ckhed', u'researcher_id': u'ur.01042304665.14'
+                    }
+                ]
+            ], u'times_cited': 154, u'year': 2016, u'type': u'article', u'id': u'pub.1019383758'
+        },
+        {u'doi': u'10.1038/nrendo.2014.210', u'title': u'Antibiotics in early life and obesity', u'journal': {u'id': u'jour.1295000', u'title': u'Nature Reviews Endocrinology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'New York', u'name': u'New York University', u'city_id': 5128581, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'New York', u'country_code': u'US', u'state_code': u'US-NY', u'id': u'grid.137628.9'
+                            }
+                        ], u'first_name': u'Laura M.', u'last_name': u'Cox', u'researcher_id': u'ur.0704534574.51'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'New York', u'name': u'New York University', u'city_id': 5128581, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'New York', u'country_code': u'US', u'state_code': u'US-NY', u'id': u'grid.137628.9'
+                            }
+                        ], u'first_name': u'Martin J.', u'last_name': u'Blaser', u'researcher_id': u'ur.01013345173.52'
+                    }
+                ]
+            ], u'times_cited': 138, u'year': 2015, u'type': u'article', u'id': u'pub.1052714142'
+        },
+        {u'doi': u'10.1038/502615a', u'title': u'Environment: Waste production must peak this century', u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [], u'first_name': u'Daniel', u'last_name': u'Hoornweg', u'researcher_id': u'ur.011222633135.52'
+                    },
+                    {u'affiliations': [], u'first_name': u'Perinaz', u'last_name': u'Bhada-Tata', u'researcher_id': u'ur.01010063005.29'
+                    },
+                    {u'affiliations': [], u'first_name': u'Chris', u'last_name': u'Kennedy', u'researcher_id': u'ur.010536370417.30'
+                    }
+                ]
+            ], u'times_cited': 103, u'year': 2013, u'type': u'article', u'id': u'pub.1009049123'
+        },
+        {u'doi': u'10.1038/nrneph.2014.251', u'title': u'Birth weight, malnutrition and kidney-associated outcomes\u2014a global concern', u'journal': {u'id': u'jour.1294907', u'title': u'Nature Reviews Nephrology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Zurich', u'name': u'University of Zurich', u'city_id': 2657896, u'country': u'Switzerland', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'CH', u'state_code': None, u'id': u'grid.7400.3'
+                            }
+                        ], u'first_name': u'Valerie A.', u'last_name': u'Luyckx', u'researcher_id': u'ur.0621442535.09'
+                    },
+                    {u'affiliations': [
+                            {u'name': u"Renal Division, Brigham and Women's Hospital, Harvard Medical School, 75 Francis Street, Boston, MA 02115, USA."
+                            }
+                        ], u'first_name': u'Barry M.', u'last_name': u'Brenner'
+                    }
+                ]
+            ], u'times_cited': 95, u'year': 2015, u'type': u'article', u'id': u'pub.1050226008'
+        },
+        {u'doi': u'10.1038/ng.2875', u'title': u'Genome of the human hookworm Necator americanus', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Yat T', u'last_name': u'Tang', u'researcher_id': u'ur.01175174725.14'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Xin', u'last_name': u'Gao'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Bruce A', u'last_name': u'Rosa'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Sahar', u'last_name': u'Abubucker', u'researcher_id': u'ur.01331337050.30'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Kymberlie', u'last_name': u'Hallsworth-Pepin', u'researcher_id': u'ur.01345413532.60'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'John', u'last_name': u'Martin'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Rahul', u'last_name': u'Tyagi', u'researcher_id': u'ur.0711245063.13'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Esley', u'last_name': u'Heizer', u'researcher_id': u'ur.01025342263.85'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Xu', u'last_name': u'Zhang'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Veena', u'last_name': u'Bhonagiri-Palsikar', u'researcher_id': u'ur.01277300332.30'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Patrick', u'last_name': u'Minx'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Wesley C', u'last_name': u'Warren', u'researcher_id': u'ur.015042057437.96'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Qi', u'last_name': u'Wang'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Houston', u'name': u'Baylor College of Medicine', u'city_id': 4699066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Texas', u'country_code': u'US', u'state_code': u'US-TX', u'id': u'grid.39382.33'
+                            },
+                            {u'name': u"Sabin Vaccine Institute and Texas Children's Hospital Center for Vaccine Development, Houston, Texas, USA."
+                            }
+                        ], u'first_name': u'Bin', u'last_name': u'Zhan', u'researcher_id': u'ur.01031042045.34'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Houston', u'name': u'Baylor College of Medicine', u'city_id': 4699066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Texas', u'country_code': u'US', u'state_code': u'US-TX', u'id': u'grid.39382.33'
+                            },
+                            {u'name': u"Sabin Vaccine Institute and Texas Children's Hospital Center for Vaccine Development, Houston, Texas, USA."
+                            }
+                        ], u'first_name': u'Peter J', u'last_name': u'Hotez', u'researcher_id': u'ur.0742445763.83'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Pasadena', u'name': u'California Institute of Technology', u'city_id': 5381396, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.20861.3d'
+                            },
+                            {u'city': u'Chevy Chase', u'name': u'Howard Hughes Medical Institute', u'city_id': 4351335, u'country': u'United States', u'org_types': [u'Nonprofit'
+                                ], u'state': u'Maryland', u'country_code': u'US', u'state_code': u'US-MD', u'id': u'grid.413575.1'
+                            }
+                        ], u'first_name': u'Paul W', u'last_name': u'Sternberg', u'researcher_id': u'ur.01225744264.62'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Townsville', u'name': u'James Cook University', u'city_id': 2146142, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1011.1'
+                            }
+                        ], u'first_name': u'Annette', u'last_name': u'Dougall', u'researcher_id': u'ur.01036626600.19'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Townsville', u'name': u'James Cook University', u'city_id': 2146142, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1011.1'
+                            }
+                        ], u'first_name': u'Soraya Torres', u'last_name': u'Gaze', u'researcher_id': u'ur.01035546303.15'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Brisbane', u'name': u'QIMR Berghofer Medical Research Institute', u'city_id': 2174003, u'country': u'Australia', u'org_types': [u'Facility'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1049.c'
+                            }
+                        ], u'first_name': u'Jason', u'last_name': u'Mulvenna', u'researcher_id': u'ur.01165147003.72'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Townsville', u'name': u'James Cook University', u'city_id': 2146142, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1011.1'
+                            }
+                        ], u'first_name': u'Javier', u'last_name': u'Sotillo', u'researcher_id': u'ur.01350277757.99'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Sydney', u'name': u'Macquarie University', u'city_id': 2147714, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'New South Wales', u'country_code': u'AU', u'state_code': u'AU-NSW', u'id': u'grid.1004.5'
+                            },
+                            {u'city': u'Singapore', u'name': u'National University of Singapore', u'city_id': 1880252, u'country': u'Singapore', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'SG', u'state_code': None, u'id': u'grid.4280.e'
+                            }
+                        ], u'first_name': u'Shoba', u'last_name': u'Ranganathan', u'researcher_id': u'ur.0657306270.28'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Belo Horizonte', u'name': u'Universidade Federal de Minas Gerais', u'city_id': 3470127, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.8430.f'
+                            }
+                        ], u'first_name': u'Elida M', u'last_name': u'Rabelo', u'researcher_id': u'ur.01167442725.35'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Richard K', u'last_name': u'Wilson', u'researcher_id': u'ur.013076541047.38'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Irvine', u'name': u'University of California, Irvine', u'city_id': 5359777, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.266093.8'
+                            }
+                        ], u'first_name': u'Philip L', u'last_name': u'Felgner', u'researcher_id': u'ur.013147704677.05'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Washington D.C.', u'name': u'George Washington University', u'city_id': 4140963, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'District of Columbia', u'country_code': u'US', u'state_code': u'US-DC', u'id': u'grid.253615.6'
+                            }
+                        ], u'first_name': u'Jeffrey', u'last_name': u'Bethony', u'researcher_id': u'ur.010474676037.49'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Washington D.C.', u'name': u'George Washington University', u'city_id': 4140963, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'District of Columbia', u'country_code': u'US', u'state_code': u'US-DC', u'id': u'grid.253615.6'
+                            }
+                        ], u'first_name': u'John M', u'last_name': u'Hawdon', u'researcher_id': u'ur.01136330750.97'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Robin B', u'last_name': u'Gasser', u'researcher_id': u'ur.01163070613.20'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Townsville', u'name': u'James Cook University', u'city_id': 2146142, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1011.1'
+                            }
+                        ], u'first_name': u'Alex', u'last_name': u'Loukas', u'researcher_id': u'ur.013016241377.08'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Makedonka', u'last_name': u'Mitreva', u'researcher_id': u'ur.01262676252.35'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1103138', u'title': u'Nature Genetics'
+            }, u'times_cited': 90, u'year': 2014, u'type': u'article', u'id': u'pub.1045439346'
+        },
+        {u'doi': u'10.1038/nbt.3277', u'title': u'Expression of trehalose-6-phosphate phosphatase in maize ears improves yield in well-watered and drought conditions', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Michael L', u'last_name': u'Nuccio', u'researcher_id': u'ur.01227646047.95'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Syngenta Seeds, Inc., Slater, Iowa, USA.'
+                            }
+                        ], u'first_name': u'Jeff', u'last_name': u'Wu'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Syngenta Seeds, Inc., Slater, Iowa, USA.'
+                            }
+                        ], u'first_name': u'Ron', u'last_name': u'Mowers'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Hua-Ping', u'last_name': u'Zhou'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Syngenta Seeds, Inc., Slater, Iowa, USA.'
+                            }
+                        ], u'first_name': u'Moez', u'last_name': u'Meghji'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Harpenden', u'name': u'Rothamsted Research', u'city_id': 2647451, u'country': u'United Kingdom', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'GB', u'state_code': None, u'id': u'grid.418374.d'
+                            }
+                        ], u'first_name': u'Lucia F', u'last_name': u'Primavesi', u'researcher_id': u'ur.0577163753.57'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Harpenden', u'name': u'Rothamsted Research', u'city_id': 2647451, u'country': u'United Kingdom', u'org_types': [u'Facility'
+                                ], u'state': None, u'country_code': u'GB', u'state_code': None, u'id': u'grid.418374.d'
+                            }
+                        ], u'first_name': u'Matthew J', u'last_name': u'Paul', u'researcher_id': u'ur.0622247645.01'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Xi', u'last_name': u'Chen'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Yan', u'last_name': u'Gao'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Emdadul', u'last_name': u'Haque', u'researcher_id': u'ur.01335736175.43'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Greensboro', u'name': u'Syngenta (United States)', u'city_id': 4469146, u'country': u'United States', u'org_types': [u'Company'
+                                ], u'state': u'North Carolina', u'country_code': u'US', u'state_code': u'US-NC', u'id': u'grid.420134.0'
+                            }
+                        ], u'first_name': u'Shib Sankar', u'last_name': u'Basu', u'researcher_id': u'ur.01102544365.38'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Lincoln', u'name': u'University of Nebraska\u2013Lincoln', u'city_id': 5072006, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Nebraska', u'country_code': u'US', u'state_code': u'US-NE', u'id': u'grid.24434.35'
+                            }
+                        ], u'first_name': u'L Mark', u'last_name': u'Lagrimini', u'researcher_id': u'ur.01366561075.42'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1115214', u'title': u'Nature Biotechnology'
+            }, u'times_cited': 83, u'year': 2015, u'type': u'article', u'id': u'pub.1032454362'
+        },
+        {u'doi': u'10.1038/nature13242', u'title': u'Trogocytosis by Entamoeba histolytica contributes to cell killing and tissue invasion', u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'Katherine S.', u'last_name': u'Ralston', u'researcher_id': u'ur.01321643554.34'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'Michael D.', u'last_name': u'Solga', u'researcher_id': u'ur.01262455500.49'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'Nicole M.', u'last_name': u'Mackey-Lawrence', u'researcher_id': u'ur.01371420734.23'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'New Delhi', u'name': u'Jawaharlal Nehru University', u'city_id': 1261481, u'country': u'India', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'IN', u'state_code': None, u'id': u'grid.10706.30'
+                            }
+                        ], u'first_name': u'', u'last_name': u'Somlata', u'researcher_id': u'ur.0646003403.51'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'New Delhi', u'name': u'Jawaharlal Nehru University', u'city_id': 1261481, u'country': u'India', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'IN', u'state_code': None, u'id': u'grid.10706.30'
+                            }
+                        ], u'first_name': u'Alok', u'last_name': u'Bhattacharya', u'researcher_id': u'ur.01200174224.13'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Charlottesville', u'name': u'University of Virginia', u'city_id': 4752031, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Virginia', u'country_code': u'US', u'state_code': u'US-VA', u'id': u'grid.27755.32'
+                            }
+                        ], u'first_name': u'William A.', u'last_name': u'Petri', u'researcher_id': u'ur.0704212656.70'
+                    }
+                ]
+            ], u'times_cited': 73, u'year': 2014, u'type': u'article', u'id': u'pub.1012165557'
+        },
+        {u'doi': u'10.1038/ncomms8806', u'title': u'Diet and specific microbial exposure trigger features of environmental enteropathy in a novel murine model', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Eric M.', u'last_name': u'Brown', u'researcher_id': u'ur.01040701270.67'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Marta', u'last_name': u'Wlodarska', u'researcher_id': u'ur.01227712114.29'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Edmonton', u'name': u'University of Alberta', u'city_id': 5946768, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'Alberta', u'country_code': u'CA', u'state_code': u'CA-AB', u'id': u'grid.17089.37'
+                            }
+                        ], u'first_name': u'Benjamin P.', u'last_name': u'Willing', u'researcher_id': u'ur.01163472712.50'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Paris', u'name': u'Institut Pasteur', u'city_id': 2988507, u'country': u'France', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'FR', u'state_code': None, u'id': u'grid.428999.7'
+                            }
+                        ], u'first_name': u'Pascale', u'last_name': u'Vonaesch', u'researcher_id': u'ur.01103742337.49'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Victoria', u'name': u'University of Victoria', u'city_id': 6174041, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.143640.4'
+                            }
+                        ], u'first_name': u'Jun', u'last_name': u'Han', u'researcher_id': u'ur.01170036177.41'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Lisa A.', u'last_name': u'Reynolds', u'researcher_id': u'ur.0670234703.55'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Marie-Claire', u'last_name': u'Arrieta', u'researcher_id': u'ur.0700661550.03'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Marco', u'last_name': u'Uhrig'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Roland', u'last_name': u'Scholz', u'researcher_id': u'ur.01036345677.40'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'Oswaldo', u'last_name': u'Partida', u'researcher_id': u'ur.01027621743.60'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Victoria', u'name': u'University of Victoria', u'city_id': 6174041, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.143640.4'
+                            }
+                        ], u'first_name': u'Christoph H.', u'last_name': u'Borchers', u'researcher_id': u'ur.0621767077.53'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Paris', u'name': u'Institut Pasteur', u'city_id': 2988507, u'country': u'France', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'FR', u'state_code': None, u'id': u'grid.428999.7'
+                            }
+                        ], u'first_name': u'Philippe J.', u'last_name': u'Sansonetti', u'researcher_id': u'ur.01173563160.92'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vancouver', u'name': u'University of British Columbia', u'city_id': 6173331, u'country': u'Canada', u'org_types': [u'Education'
+                                ], u'state': u'British Columbia', u'country_code': u'CA', u'state_code': u'CA-BC', u'id': u'grid.17091.3e'
+                            }
+                        ], u'first_name': u'B. Brett', u'last_name': u'Finlay', u'researcher_id': u'ur.015564661542.34'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1043282', u'title': u'Nature Communications'
+            }, u'times_cited': 65, u'year': 2015, u'type': u'article', u'id': u'pub.1008518761'
+        },
+        {u'doi': u'10.1038/ncomms12570', u'title': u'Rewiring of jasmonate and phytochrome B signalling uncouples plant growth-defense tradeoffs', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            }
+                        ], u'first_name': u'Marcelo L.', u'last_name': u'Campos', u'researcher_id': u'ur.01314660307.29'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            }
+                        ], u'first_name': u'Yuki', u'last_name': u'Yoshida', u'researcher_id': u'ur.016045347465.45'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            }
+                        ], u'first_name': u'Ian T.', u'last_name': u'Major', u'researcher_id': u'ur.0762774536.43'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            }
+                        ], u'first_name': u'Dalton', u'last_name': u'de Oliveira Ferreira'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            },
+                            {u'city': u'East Lansing', u'name': u'Michigan State University', u'city_id': 4991640, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Michigan', u'country_code': u'US', u'state_code': u'US-MI', u'id': u'grid.17088.36'
+                            }
+                        ], u'first_name': u'Sarathi M.', u'last_name': u'Weraduwage', u'researcher_id': u'ur.0706576371.35'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            },
+                            {u'city': u'East Lansing', u'name': u'Michigan State University', u'city_id': 4991640, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Michigan', u'country_code': u'US', u'state_code': u'US-MI', u'id': u'grid.17088.36'
+                            }
+                        ], u'first_name': u'John E.', u'last_name': u'Froehlich', u'researcher_id': u'ur.01051042415.01'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            }
+                        ], u'first_name': u'Brendan F.', u'last_name': u'Johnson', u'researcher_id': u'ur.012330200265.11'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            },
+                            {u'city': u'East Lansing', u'name': u'Michigan State University', u'city_id': 4991640, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Michigan', u'country_code': u'US', u'state_code': u'US-MI', u'id': u'grid.17088.36'
+                            }
+                        ], u'first_name': u'David M.', u'last_name': u'Kramer', u'researcher_id': u'ur.01177701477.02'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Ithaca', u'name': u'Cornell University', u'city_id': 5122432, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'New York', u'country_code': u'US', u'state_code': u'US-NY', u'id': u'grid.5386.8'
+                            }
+                        ], u'first_name': u'Georg', u'last_name': u'Jander', u'researcher_id': u'ur.01175460420.00'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'East Lansing', u'name': u'Michigan State University', u'city_id': 4991640, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Michigan', u'country_code': u'US', u'state_code': u'US-MI', u'id': u'grid.17088.36'
+                            }
+                        ], u'first_name': u'Thomas D.', u'last_name': u'Sharkey', u'researcher_id': u'ur.01025610130.43'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Energy-Plant Research Laboratory, East Lansing, Michigan 48824, USA'
+                            },
+                            {u'city': u'East Lansing', u'name': u'Michigan State University', u'city_id': 4991640, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Michigan', u'country_code': u'US', u'state_code': u'US-MI', u'id': u'grid.17088.36'
+                            }
+                        ], u'first_name': u'Gregg A.', u'last_name': u'Howe', u'researcher_id': u'ur.0722027647.60'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1043282', u'title': u'Nature Communications'
+            }, u'times_cited': 58, u'year': 2016, u'type': u'article', u'id': u'pub.1027172331'
+        },
+        {u'doi': u'10.1038/nature18845', u'title': u'A microbial perspective of human developmental biology', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Mark R.', u'last_name': u'Charbonneau', u'researcher_id': u'ur.01167517137.59'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Laura V.', u'last_name': u'Blanton', u'researcher_id': u'ur.0606373045.17'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Stanford', u'name': u'Stanford University', u'city_id': 5398563, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.168010.e'
+                            },
+                            {u'city': u'Palo Alto', u'name': u'VA Palo Alto Health Care System', u'city_id': 5380748, u'country': u'United States', u'org_types': [u'Healthcare'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.280747.e'
+                            }
+                        ], u'first_name': u'Daniel B.', u'last_name': u'DiGiulio', u'researcher_id': u'ur.0771575405.12'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Stanford', u'name': u'Stanford University', u'city_id': 5398563, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.168010.e'
+                            }
+                        ], u'first_name': u'David A.', u'last_name': u'Relman', u'researcher_id': u'ur.0612224366.06'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Davis', u'name': u'University of California, Davis', u'city_id': 5341704, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.27860.3b'
+                            }
+                        ], u'first_name': u'Carlito B.', u'last_name': u'Lebrilla', u'researcher_id': u'ur.0627173306.64'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Davis', u'name': u'University of California, Davis', u'city_id': 5341704, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.27860.3b'
+                            }
+                        ], u'first_name': u'David A.', u'last_name': u'Mills', u'researcher_id': u'ur.01113412407.19'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'St Louis', u'name': u'Washington University in St. Louis', u'city_id': 4407066, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Missouri', u'country_code': u'US', u'state_code': u'US-MO', u'id': u'grid.4367.6'
+                            }
+                        ], u'first_name': u'Jeffrey I.', u'last_name': u'Gordon', u'researcher_id': u'ur.013751061307.10'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'times_cited': 56, u'year': 2016, u'type': u'article', u'id': u'pub.1021246972'
+        },
+        {u'doi': u'10.1038/nbt.2710', u'title': u'What is the point of large-scale collections of human induced pluripotent stem cells?', u'journal': {u'id': u'jour.1115214', u'title': u'Nature Biotechnology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Tadworth', u'name': u'Pfizer (United Kingdom)', u'city_id': 2636331, u'country': u'United Kingdom', u'org_types': [u'Company'
+                                ], u'state': None, u'country_code': u'GB', u'state_code': None, u'id': u'grid.418566.8'
+                            }
+                        ], u'first_name': u'Ruth', u'last_name': u'McKernan', u'researcher_id': u'ur.0706214753.64'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'London', u'name': u"King's College London", u'city_id': 2643743, u'country': u'United Kingdom', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'GB', u'state_code': None, u'id': u'grid.13097.3c'
+                            }
+                        ], u'first_name': u'Fiona M', u'last_name': u'Watt', u'researcher_id': u'ur.014147111212.20'
+                    }
+                ]
+            ], u'times_cited': 49, u'year': 2013, u'type': u'article', u'id': u'pub.1037385245'
+        },
+        {u'doi': u'10.1038/nrendo.2016.37', u'title': u'Micronutrient deficiencies in pregnancy worldwide: health effects and prevention', u'journal': {u'id': u'jour.1295000', u'title': u'Nature Reviews Endocrinology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'State College', u'name': u'Pennsylvania State University', u'city_id': 5213681, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Pennsylvania', u'country_code': u'US', u'state_code': u'US-PA', u'id': u'grid.29857.31'
+                            }
+                        ], u'first_name': u'Alison D.', u'last_name': u'Gernand', u'researcher_id': u'ur.01062441046.34'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Baltimore', u'name': u'Johns Hopkins University', u'city_id': 4347778, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Maryland', u'country_code': u'US', u'state_code': u'US-MD', u'id': u'grid.21107.35'
+                            }
+                        ], u'first_name': u'Kerry J.', u'last_name': u'Schulze', u'researcher_id': u'ur.01321730164.39'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Davis', u'name': u'University of California, Davis', u'city_id': 5341704, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.27860.3b'
+                            }
+                        ], u'first_name': u'Christine P.', u'last_name': u'Stewart', u'researcher_id': u'ur.01230322010.45'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Baltimore', u'name': u'Johns Hopkins University', u'city_id': 4347778, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Maryland', u'country_code': u'US', u'state_code': u'US-MD', u'id': u'grid.21107.35'
+                            }
+                        ], u'first_name': u'Keith P.', u'last_name': u'West', u'researcher_id': u'ur.016253675652.47'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Baltimore', u'name': u'Johns Hopkins University', u'city_id': 4347778, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Maryland', u'country_code': u'US', u'state_code': u'US-MD', u'id': u'grid.21107.35'
+                            }
+                        ], u'first_name': u'Parul', u'last_name': u'Christian', u'researcher_id': u'ur.01252457606.23'
+                    }
+                ]
+            ], u'times_cited': 48, u'year': 2016, u'type': u'article', u'id': u'pub.1018901489'
+        },
+        {u'doi': u'10.1038/ng.3012', u'title': u'Genome and transcriptome of the porcine whipworm Trichuris suis', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Aaron R', u'last_name': u'Jex', u'researcher_id': u'ur.01056213027.60'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Copenhagen', u'name': u'University of Copenhagen', u'city_id': 2618425, u'country': u'Denmark', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'DK', u'state_code': None, u'id': u'grid.5254.6'
+                            }
+                        ], u'first_name': u'Peter', u'last_name': u'Nejsum', u'researcher_id': u'ur.0737107542.52'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            },
+                            {u'city': u'Ithaca', u'name': u'Cornell University', u'city_id': 5122432, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'New York', u'country_code': u'US', u'state_code': u'US-NY', u'id': u'grid.5386.8'
+                            }
+                        ], u'first_name': u'Erich M', u'last_name': u'Schwarz', u'researcher_id': u'ur.01313052256.88'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            }
+                        ], u'first_name': u'Li', u'last_name': u'Hu', u'researcher_id': u'ur.0624406232.81'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Neil D', u'last_name': u'Young', u'researcher_id': u'ur.01004224054.23'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Ross S', u'last_name': u'Hall', u'researcher_id': u'ur.01120452454.87'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Pasi K', u'last_name': u'Korhonen', u'researcher_id': u'ur.0704645262.33'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            }
+                        ], u'first_name': u'Shengguang', u'last_name': u'Liao', u'researcher_id': u'ur.01305540232.07'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Copenhagen', u'name': u'University of Copenhagen', u'city_id': 2618425, u'country': u'Denmark', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'DK', u'state_code': None, u'id': u'grid.5254.6'
+                            }
+                        ], u'first_name': u'Stig', u'last_name': u'Thamsborg', u'researcher_id': u'ur.01057116550.51'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            }
+                        ], u'first_name': u'Jinquan', u'last_name': u'Xia', u'researcher_id': u'ur.01134351556.41'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            }
+                        ], u'first_name': u'Pengwei', u'last_name': u'Xu', u'researcher_id': u'ur.01202464756.63'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            }
+                        ], u'first_name': u'Shaowei', u'last_name': u'Wang'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Jean-Pierre Y', u'last_name': u'Scheerlinck', u'researcher_id': u'ur.015260021307.51'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Gold Coast', u'name': u'Griffith University', u'city_id': 2165087, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Queensland', u'country_code': u'AU', u'state_code': u'AU-QLD', u'id': u'grid.1022.1'
+                            }
+                        ], u'first_name': u'Andreas', u'last_name': u'Hofmann', u'researcher_id': u'ur.01271047766.21'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Pasadena', u'name': u'California Institute of Technology', u'city_id': 5381396, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.20861.3d'
+                            }
+                        ], u'first_name': u'Paul W', u'last_name': u'Sternberg', u'researcher_id': u'ur.01225744264.62'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Shenzhen', u'name': u'Beijing Genomics Institute', u'city_id': 1795565, u'country': u'China', u'org_types': [u'Nonprofit'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.21155.32'
+                            },
+                            {u'city': u'Copenhagen', u'name': u'University of Copenhagen', u'city_id': 2618425, u'country': u'Denmark', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'DK', u'state_code': None, u'id': u'grid.5254.6'
+                            },
+                            {u'city': u'Jeddah', u'name': u'King Abdulaziz University', u'city_id': 105343, u'country': u'Saudi Arabia', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'SA', u'state_code': None, u'id': u'grid.412125.1'
+                            },
+                            {u'city': u'Macao', u'name': u'Macau University of Science and Technology', u'city_id': 1821274, u'country': u'Macao', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'MO', u'state_code': None, u'id': u'grid.259384.1'
+                            },
+                            {u'city': u'Hong Kong', u'name': u'University of Hong Kong', u'city_id': 1819729, u'country': u'China', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'CN', u'state_code': None, u'id': u'grid.194645.b'
+                            }
+                        ], u'first_name': u'Jun', u'last_name': u'Wang', u'researcher_id': u'ur.011125677474.95'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Melbourne', u'name': u'University of Melbourne', u'city_id': 2158177, u'country': u'Australia', u'org_types': [u'Education'
+                                ], u'state': u'Victoria', u'country_code': u'AU', u'state_code': u'AU-VIC', u'id': u'grid.1008.9'
+                            }
+                        ], u'first_name': u'Robin B', u'last_name': u'Gasser', u'researcher_id': u'ur.01163070613.20'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1103138', u'title': u'Nature Genetics'
+            }, u'times_cited': 47, u'year': 2014, u'type': u'article', u'id': u'pub.1024445707'
+        },
+        {u'doi': u'10.1038/nature14171', u'title': u'NIK1-mediated translation suppression functions as a plant antiviral immunity mechanism', u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Cristiane', u'last_name': u'Zorzatto', u'researcher_id': u'ur.01325074275.64'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Jo\xe3o Paulo B.', u'last_name': u'Machado', u'researcher_id': u'ur.011102320237.87'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'K\xeania V. G.', u'last_name': u'Lopes', u'researcher_id': u'ur.0613262047.17'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Kelly J. T.', u'last_name': u'Nascimento', u'researcher_id': u'ur.01031533646.75'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Welison A.', u'last_name': u'Pereira', u'researcher_id': u'ur.07366351721.16'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Ot\xe1vio J. B.', u'last_name': u'Brustolini', u'researcher_id': u'ur.0716205310.45'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Pedro A. B.', u'last_name': u'Reis', u'researcher_id': u'ur.01105047455.60'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Iara P.', u'last_name': u'Calil', u'researcher_id': u'ur.01021717470.27'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Michihito', u'last_name': u'Deguchi', u'researcher_id': u'ur.0650072110.47'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            },
+                            {u'city': u'Rio de Janeiro', u'name': u'Federal University of Rio de Janeiro', u'city_id': 3451190, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.8536.8'
+                            }
+                        ], u'first_name': u'Gilberto', u'last_name': u'Sachetto-Martins', u'researcher_id': u'ur.01363363154.76'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Bianca C.', u'last_name': u'Gouveia', u'researcher_id': u'ur.0764471076.03'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Virg\xedlio A. P.', u'last_name': u'Loriato', u'researcher_id': u'ur.0605331275.98'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Marcos A. C.', u'last_name': u'Silva'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Fabyano F.', u'last_name': u'Silva', u'researcher_id': u'ur.01044605324.31'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'An\xe9sia A.', u'last_name': u'Santos', u'researcher_id': u'ur.01366041771.74'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            },
+                            {u'city': u'La Jolla', u'name': u'Salk Institute for Biological Studies', u'city_id': 5363943, u'country': u'United States', u'org_types': [u'Nonprofit'
+                                ], u'state': u'California', u'country_code': u'US', u'state_code': u'US-CA', u'id': u'grid.250671.7'
+                            }
+                        ], u'first_name': u'Joanne', u'last_name': u'Chory', u'researcher_id': u'ur.01323311120.10'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Vi\xe7osa', u'name': u'Universidade Federal de Vi\xe7osa', u'city_id': 3445133, u'country': u'Brazil', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'BR', u'state_code': None, u'id': u'grid.12799.34'
+                            }
+                        ], u'first_name': u'Elizabeth P. B.', u'last_name': u'Fontes', u'researcher_id': u'ur.016002764754.43'
+                    }
+                ]
+            ], u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'times_cited': 43, u'year': 2015, u'type': u'article', u'id': u'pub.1021635411'
+        },
+        {u'doi': u'10.1038/nature16033', u'title': u'Global research priorities for infections that affect the nervous system', u'journal': {u'id': u'jour.1018957', u'title': u'Nature'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Indianapolis', u'name': u'Indiana University \u2013 Purdue University Indianapolis', u'city_id': 4259418, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Indiana', u'country_code': u'US', u'state_code': u'US-IN', u'id': u'grid.257413.6'
+                            }
+                        ], u'first_name': u'Chandy C.', u'last_name': u'John', u'researcher_id': u'ur.01123261426.26'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Oklahoma City', u'name': u'University of Oklahoma Health Sciences Center', u'city_id': 4544349, u'country': u'United States', u'org_types': [u'Healthcare'
+                                ], u'state': u'Oklahoma', u'country_code': u'US', u'state_code': u'US-OK', u'id': u'grid.266902.9'
+                            }
+                        ], u'first_name': u'H\xe9l\xe8ne', u'last_name': u'Carabin', u'researcher_id': u'ur.01135416623.36'
+                    },
+                    {u'affiliations': [
+                            {u'name': u'Department of Bacteriology, US Naval Medical Research Unit No. 6, Lima, Peru.'
+                            }
+                        ], u'first_name': u'Silvia M.', u'last_name': u'Montano', u'researcher_id': u'ur.01315663030.11'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Kampala', u'name': u'Makerere University', u'city_id': 232422, u'country': u'Uganda', u'org_types': [u'Education'
+                                ], u'state': None, u'country_code': u'UG', u'state_code': None, u'id': u'grid.11194.3c'
+                            }
+                        ], u'first_name': u'Paul', u'last_name': u'Bangirana', u'researcher_id': u'ur.0577304426.58'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Seattle', u'name': u'University of Washington', u'city_id': 5809844, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Washington', u'country_code': u'US', u'state_code': u'US-WA', u'id': u'grid.34477.33'
+                            }
+                        ], u'first_name': u'Joseph R.', u'last_name': u'Zunt', u'researcher_id': u'ur.01341211457.41'
+                    },
+                    {u'affiliations': [
+                            {u'city': u'Minneapolis', u'name': u'University of Minnesota', u'city_id': 5037649, u'country': u'United States', u'org_types': [u'Education'
+                                ], u'state': u'Minnesota', u'country_code': u'US', u'state_code': u'US-MN', u'id': u'grid.17635.36'
+                            }
+                        ], u'first_name': u'Phillip K.', u'last_name': u'Peterson', u'researcher_id': u'ur.010661674317.54'
+                    }
+                ]
+            ], u'times_cited': 43, u'year': 2015, u'type': u'article', u'id': u'pub.1022793805'
+        },
+        {u'doi': u'10.1038/ni.3323', u'title': u'Amino acid auxotrophy as a system of immunological control nodes', u'journal': {u'id': u'jour.1022778', u'title': u'Nature Immunology'
+            }, u'author_affiliations': [
+                [
+                    {u'affiliations': [
+                            {u'city': u'Memphis', u'name': u"St. Jude Children's Research Hospital", u'city_id': 4641239, u'country': u'United States', u'org_types': [u'Healthcare'
+                                ], u'state': u'Tennessee', u'country_code': u'US', u'state_code': u'US-TN', u'id': u'grid.240871.8'
+                            }
+                        ], u'first_name': u'Peter J', u'last_name': u'Murray', u'researcher_id': u'ur.01153012071.73'
+                    }
+                ]
+            ], u'times_cited': 40, u'year': 2015, u'type': u'article', u'id': u'pub.1049987510'
+        }
+    ]
+}
