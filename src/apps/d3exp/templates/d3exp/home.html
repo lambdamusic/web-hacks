@@ -1,0 +1,45 @@
+{% extends "d3exp/base.html" %}
+
+{% load static %}
+
+{% block navbar %}
+
+    {% with thispage="home" %}
+
+    {% include "d3exp/default-navbar.html" %}
+
+    {% endwith %}
+
+{% endblock navbar %}
+
+
+  {% block bodycontent %}
+
+  <div class="page-header">
+    Home
+  </div>
+
+
+  <div class="container">
+
+
+      {% comment %} BUTTONS SECTION {% endcomment %}
+      <div class="row">
+
+        <p>TIP: Go to <code>/d3exp/static/filename</code> to open up one of the static experiements</p>
+
+        
+        {% for x in  static_templates %}
+          <li><a href="static/{{x}}">/static/{{x}}</a></li> 
+        {% endfor %}
+          
+
+      </div>
+
+
+
+
+  </div> <!-- /container -->
+
+
+{% endblock bodycontent %}

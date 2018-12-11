@@ -33,7 +33,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # ..
     'dbpedialinks',
-    'zerohunger'
+    'zerohunger',
+    'd3exp',
 ]
 
 MIDDLEWARE = [

@@ -74,7 +74,6 @@ QUERY = """
     """
 
 COUNTRY_CLAUSE = " AND %s "
-RESTRICT_CLAUSE = """ AND (doi:10.1038* OR doi:10.1007* OR doi:10.1186*) """
 
 DOI_STEMS = {
     '10.1013':
@@ -131,7 +130,8 @@ DOI_STEMS = {
 
 RESTRICT_CLAUSE = "AND (%s) " % " OR ".join(["doi:%s*" % x for x in DOI_STEMS])
 
-print(RESTRICT_CLAUSE)
+# => AND (doi:10.1038* OR doi:10.1007* OR doi:10.1186*)
+# print(RESTRICT_CLAUSE)
 
 
 def home(request):
