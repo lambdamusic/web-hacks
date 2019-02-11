@@ -128,7 +128,8 @@
 
                   <li style="margin-bottom: 10px;">
                     
-                    <span class="lead" style="color: darkgoldenrod;">{{p.title}}</span><br />&nbsp;<span style="text-transform: uppercase;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>
+                    
+                    {{p.type|upper}}&nbsp;<span class="lead" style="color: darkgoldenrod;">{{p.title}}</span><br />&nbsp;<span style="text-transform: uppercase; color: grey;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>
                   
                   </li>
 

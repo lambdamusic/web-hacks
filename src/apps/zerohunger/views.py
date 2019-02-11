@@ -16,6 +16,8 @@ except:
     print("SETTINGS NOT FOUND: DIMENSIONS_USR, DIMENSIONS_PSW")
     raise
 
+DEBUG_MODE = False  # set to True to print out useful info in the console
+
 TOPICS = [
     {
         'name': 'Undernourishment',
@@ -64,8 +66,8 @@ TOPICS = [
 
 #
 QUERY = """
-    search publications in full_data for "(%s AND SDG) OR (%s AND MDG)%s%s"
-    where year in [2000:2018] 
+    search publications in full_data for "(%s AND SDG) OR (%s AND MDG)%s"
+    where (year in [2000:2018]%s) 
     return publications [basics-issue-volume-pages+doi+times_cited] sort by times_cited
     return in "facets"
     funders[name + country_name] as "entity_funder" 
@@ -75,63 +77,10 @@ QUERY = """
 
 COUNTRY_CLAUSE = " AND %s "
 
-DOI_STEMS = {
-    '10.1013':
-    'Nature Publishing Group',
-    '10.1038':
-    'Nature Publishing Group',
-    '10.1057':
-    'Nature Publishing Group - Macmillan Publishers',
-    '10.1251':
-    'Springer (Biological Procedures Online)',
-    '10.1186':
-    'Springer (Biomed Central Ltd.)',
-    '10.4076':
-    'Springer (Cases Network, Ltd.)',
-    '10.1114':
-    'Springer (Kluwer Academic Publishers - Biomedical Engineering Society',
-    '10.1023':
-    'Springer (Kluwer Academic Publishers)',
-    '10.5819':
-    'Springer - (backfiles)',
-    '10.1361':
-    'Springer - ASM International',
-    '10.1379':
-    'Springer - Cell Stress Society International',
-    '10.1065':
-    'Springer - Ecomed Publishers',
-    '10.1381':
-    'Springer - FD Communications',
-    '10.7603':
-    'Springer - Global Science Journals',
-    '10.1385':
-    'Springer - Humana Press',
-    '10.4098':
-    'Springer - Mammal Research Institute',
-    '10.3758':
-    'Springer - Psychonomic Society',
-    '10.1617':
-    'Springer - RILEM Publishing',
-    '10.5052':
-    'Springer - Real Academia de Ciencias Exactas, Fisicas y Naturales',
-    '10.1245':
-    'Springer - Society of Surgical Oncology',
-    '10.4333':
-    'Springer - The Korean Society of Pharmaceutical Sciences and Technology',
-    '10.1365':
-    'Springer Fachmedien Wiesbaden GmbH',
-    '10.1891':
-    'Springer Publishing Company',
-    '10.1140':
-    'Springer-Verlag',
-    '10.1007':
-    'Springer-Verlag',
-}
+RESTRICT_CLAUSE = """ and publisher="Springer Nature" """
 
-RESTRICT_CLAUSE = "AND (%s) " % " OR ".join(["doi:%s*" % x for x in DOI_STEMS])
-
-# => AND (doi:10.1038* OR doi:10.1007* OR doi:10.1186*)
-# print(RESTRICT_CLAUSE)
+if DEBUG_MODE:
+    print("RESTRICT_CLAUSE=", RESTRICT_CLAUSE)
 
 
 def home(request):
@@ -203,6 +152,7 @@ def do_query(query):
 
     #   Display raw result
     res = resp.json()
-    if False:  # debug
+    if DEBUG_MODE:  # DEBUG
+        print(query)
         print_json(res)
     return res
