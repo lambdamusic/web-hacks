@@ -134,16 +134,12 @@
               <a data-toggle="collapse" class="text-warning" href="#{{a.uri|url_last_bit}}" style="font-size: 90%;" title="Open panel">
                 {{forloop.counter}}. {{a.title}}
               </a> 
-              {% comment %}
-              <a class="-btn -btn-xs -btn-default" target="_blank" style="-margin-bottom: 5px;color: blue;" href="{{a.uri}}" title="View SciGraph record">(SciGraph)</a> {% endcomment %}
             </h4>
           </div>
           <div id="{{a.uri|url_last_bit}}" class="panel-collapse collapse ajax_pub_info_loaded">
             <div class="panel-body ">
               Year: {{a.pubyear}}
-              <br />View: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication {{a.description}}">DOI: {{a.description}}</a> | <a target="_blank" href="{{a.uri}}" title="View {{a.uri}}">scigraph record</a>
-              {% comment %} <br /> DOI: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication">{{a.description}}</a>
-              <br /> SciGraph: <a target="_blank" href="{{a.uri}}" title="View SciGraph record">{{a.uri}}</a> {% endcomment %}
+              <br />View: <a href="http://dx.doi.org/{{a.description}}" target="_blank" title="View Publication {{a.description}}">DOI: {{a.description}}</a> | <a target="_blank" href="https://scigraph.springernature.com/pub.{{a.description}}" title="View in SciGraph">scigraph record</a>
               <br />
             </div>
             <div class="panel-footer">
