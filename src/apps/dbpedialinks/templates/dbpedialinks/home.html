@@ -26,7 +26,7 @@
     </ol>
 
     <div class="page-header">
-      <h1>Browse by Subject
+      <h1>Browse SN publications using DBPedia Subjects
         {% if entities %}
           <a class="btn btn-sm btn-default" href="{% url 'dbpedialinks:home' %}">home</a>        
         {% endif %}
@@ -40,8 +40,12 @@
 
     <div class="row">
 
-
-      <div class="col-md-3" style="margin-top: 20px;">
+      {% if entities %}
+      <div class="col-md-3" style="margin-top: 20px; ">
+      {% else %}
+      <div class="col-md-12" style="margin-top: 20px;">
+      {% endif %}
+      
 
           <h3>Search <span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 90%;"></span></h3>
           <hr>
@@ -99,11 +103,11 @@
 
         {% else %}
 
-          <div class="col-md-9 well" style="margin-top: 20px;">
+          <div class="col-md-12 well" style="margin-top: 60px;">
 
 
 
-            <h4>What is this?</h4><br />
+            <h2>What is this?</h2><br />
 
             <p class="lead">
 
@@ -125,7 +129,7 @@
 
             </p>
 
-            <h4>Statistics</h4>
+            <h3>Statistics</h3>
 
             <p class="lead">Publications: <span style="font-size: 140%;">{{articlestot}}</span>
 
