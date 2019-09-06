@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'dbpedialinks',
     'zerohunger',
     'd3exp',
+    'dslconcepts',
 ]
 
 MIDDLEWARE = [
