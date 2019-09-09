@@ -21,7 +21,7 @@ DEBUG_MODE = False  # set to True to print out useful info in the console
 #
 QUERY = """
     search publications in concepts for "{}" 
-    return publications[basics+concepts] sort by times_cited limit 100 
+    return publications[basics+concepts+doi+times_cited] sort by times_cited limit 100 
     """
 
 

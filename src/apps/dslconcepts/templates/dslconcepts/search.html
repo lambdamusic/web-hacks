@@ -43,9 +43,16 @@
   {% comment %} TEMP TEMP  {% endcomment %}
 
   <div class="row">
-  {% for pub in  res.publications %}
-      <li>{{pub.doi}} {{pub.title}}</li>
+  {% for p in  res.publications %}
+
+      <li style="margin-bottom: 10px;">
+                
+          {{p.type|upper}}&nbsp;<a href="https://app.dimensions.ai/details/publication/{{p.id}}" target="_blank" style="color: darkgoldenrod;">{{p.title}}</a><br />&nbsp;<span style="text-transform: uppercase; color: grey;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>&nbsp;<span class="badge" style="background: green;">{{p.concepts|length}} concepts</span>
+        
+    </li>
   {% endfor %}
+
+
   </div>
 
 
