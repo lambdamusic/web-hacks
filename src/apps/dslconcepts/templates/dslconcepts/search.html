@@ -34,219 +34,105 @@
   <div class="container">
 
 
-  <div class="row">
+    <div class="row">
 
-      <div class="col-md-12">
+        <div class="col-md-12">
 
-      
-      {% if searchquery %}
+        
+        {% if searchquery %}
 
-          {% for c in search_concepts  %}
-
-
-                <h4><a href="{% url 'dslconcepts:home' %}?query={{c}}" title="View only this concept"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="font-size: 100%;"></span>&nbsp;&nbsp;{{c}}</a>
-                &nbsp;
-                <a class="text-danger" style="font-size: 50%" href="{% url 'dslconcepts:home' %}?query={% for x in search_concepts  %}{% if c != x %}{{x}}AND{% endif %}{% endfor %}" title="Remove concept from search">remove</a></h4>
-
-          {% endfor %}
-            
-        <hr>
+            {% for c in search_concepts  %}
 
 
-      {% else %}
-      
-          <br /><br />
-            <form action="{% url 'dslconcepts:home'%}" method="get">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="E.g. malaria or brexit" name="query" id="query" value="{{ query|default:"" }}">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button submit">Go!</button>
-              </span>
-            </div><!-- /input-group -->
-            </form>
-            <hr>
-          
-            
+                  <h4><a href="{% url 'dslconcepts:home' %}?query={{c}}" title="View only this concept"><span class="glyphicon glyphicon-tags" aria-hidden="true" style="font-size: 100%;"></span>&nbsp;&nbsp;{{c}}</a>
+                  &nbsp;
+                  <a class="text-danger" style="font-size: 50%" href="{% url 'dslconcepts:home' %}?query={% for x in search_concepts  %}{% if c != x %}{{x}}AND{% endif %}{% endfor %}" title="Remove concept from search">remove</a></h4>
 
-      {% endif %}
-
-      </div>
-      {% comment %} col-md-12 ends {% endcomment %}
-
-  </div>
-  {% comment %} row ends {% endcomment %}
-
-
-
-
-
-  <div class="row">
-
-  <div class="col-md-2" style="margin-top: 10px;">
-
-    <h5 class="text-muted">REFINE YOUR SEARCH:
-    <br /><small class="text-muted">The publications listed also have these concepts</small>
-    </h5>
-    <hr>
-
-      {% for k,v in related_concepts %} {% if not k in search_concepts %}
-
-      <a class="-btn -btn-xs -btn-primary high_contrast" style="margin-bottom: 5px; opacity: {{v|tagcloud_opacity}};" href="{% url 'dslconcepts:home' %}?query={{k}}{% for x in search_concepts  %}{% if k != x %}AND{{x}}{% endif %}{% endfor %}" title="Add to concepts list">{{k}}</a>
-      <span color="black;" style="opacity: {{v|tagcloud_opacity}};">&nbsp;{{v}} time{{v|pluralize}}</span><br /> 
-
-      {% endif %} {% endfor %}
-
-  </div>
-
-  <div class="col-md-10" style="margin-top: 20px;">
-
-    <h5>Results: {{tot}} <span class="text-muted">(top 100 show, sorted by citations_count)</span></h5>
-    <hr>
-
-
-    <ol style="margin-bottom: 10px;">
-      {% for p in  res.publications %}
-
-
-          <li>
-          <a href="https://app.dimensions.ai/details/publication/{{p.id}}" target="_blank" style="color: -darkgoldenrod;" title="{{p.title}}">{{p.title|truncatewords:20}}</a><br />&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank" style="text-transform: uppercase; color: darkgrey;" title="{{p.doi}}">{{p.journal.title}}&nbsp;({{p.year}})&nbsp;</a>&nbsp;<span -class="badge" -style="background: grey;">{{p.times_cited}} citations</span>&nbsp;<a href="javascript:$('#k_{{forloop.counter}}').toggle();" class="badge" style="background: green;">{{p.concepts|length}} concepts</a>
-
-          <div id="k_{{forloop.counter}}" style="display: none;">
-
-            {% for c in p.concepts %}
-              <a href="{% url 'dslconcepts:home' %}?query={{c}}{% for x in search_concepts  %}{% if c != x %}AND{{x}}{% endif %}{% endfor %}" style=" color: #888888;"><span class="btn btn-xs" >{{c}}</span></a>
             {% endfor %}
               
-          </div>
-
-          <hr></li>
-          
-      {% endfor %}
-    </ol>
-
-  </div>
-
-  </div>  
-  {% comment %} row ends {% endcomment %}
+          <hr>
 
 
-      {% comment %} END TEMP TEMP  {% endcomment %}
+        {% else %}
+        
+            <br /><br />
+              <form action="{% url 'dslconcepts:home'%}" method="get">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="E.g. malaria or brexit" name="query" id="query" value="{{ query|default:"" }}">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button submit">Go!</button>
+                </span>
+              </div><!-- /input-group -->
+              </form>
+              <hr>
+            
+              
+
+        {% endif %}
+
+        </div>
+        {% comment %} col-md-12 ends {% endcomment %}
+
+    </div>
+    {% comment %} row ends {% endcomment %}
 
 
-      {% comment %} BUTTONS SECTION {% endcomment %}
-      <div class="row">
 
-        <div class="col-md-6" style="margin-top: 20px;">
 
-          {% for topic in topics1  %}
-              <a href="?s={{topic.name}}" class="btn {{topic.color}} btn-lg btn-block btn-huge">{{topic.name}}</a>
-          {% endfor %}
-                      
-         </div>
-
-        <div class="col-md-6" style="margin-top: 20px;">
-          {% for topic in topics2  %}
-              <a href="?s={{topic.name}}" class="btn {{topic.color}} btn-lg btn-block btn-huge">{{topic.name}}</a>
-          {% endfor %}
-         </div>
-
-      </div>
-
+  {% if searchquery %}
+  
+    <div class="row">
 
     
-    {% if search_topic %}
-      
+    
+    <div class="col-md-2" style="margin-top: 10px;">
 
-      {% comment %} SEARCH RESULTS SECTION {% endcomment %}
-      <div class="row" style="margin-top: 60px;">
+      <h5 class="text-muted">REFINE YOUR SEARCH:
+      <br /><small class="text-muted">The publications listed also have these concepts</small>
+      </h5>
+      <hr>
 
-        <div class="col-md-12" style="margin-top: 20px;">
-          <h3>Showing content for: <span style="color: darkred;">{{search_topic|default:"no topic"}}</span>{% if country %}+&nbsp;<span style="color: goldenrod;">{{country}}</span>{% endif %}
-              ({{tot}} results)
-          </h3>        
-              <span class="checkbox" >
-              <label><input type="checkbox" onclick='handleClick(this);' value=""  {% if restrict %}CHECKED{% endif %}>Restrict to Springer Nature</label>
-             </div>
-               
-            <hr>
-         </div>
+        {% for k,v in related_concepts %} {% if not k in search_concepts %}
 
+        <a class="-btn -btn-xs -btn-primary high_contrast" style="margin-bottom: 5px; opacity: {{v|tagcloud_opacity}};" href="{% url 'dslconcepts:home' %}?query={{k}}{% for x in search_concepts  %}{% if k != x %}AND{{x}}{% endif %}{% endfor %}" title="Add to concepts list">{{k}}</a>
+        <span color="black;" style="opacity: {{v|tagcloud_opacity}};">&nbsp;{{v}} time{{v|pluralize}}</span><br /> 
 
-          <div class="col-md-12"  id="map_container" style="position: relative; width: 100%; height: 500px;">
-            {% comment %} MAP  {% endcomment %}
-          </div>
+        {% endif %} {% endfor %}
 
+    </div>
 
+    <div class="col-md-10" style="margin-top: 20px;">
 
-        <div class="col-md-4" style="margin-top: 20px;">
+      <h5>Results: {{tot}} <span class="text-muted">(top 100 show, sorted by citations_count)</span></h5>
+      <hr>
 
 
-
-            <div class="well">
-              <b>Top Researchers</b>
-              <br>
-              <ol>
-              {% for f in  res.facets.researchers %}
-                <li><a href="https://app.dimensions.ai/discover/publication?and_facet_researcher={{f.id}}" target="_blank">{{f.first_name}}&nbsp;{{f.last_name}}</a> <a class="badge text-info" title="Tot Publications">{{f.count}}</a></li>
-              {% endfor %}
-              </ol>
-            </div>
+      <ol style="margin-bottom: 10px;">
+        {% for p in  res.publications %}
 
 
-            <div class="well">
-              <b>Top Institutions</b>
-              <br>
-              <ol>
-              {% for f in  res.facets.research_orgs %}
-                <li><a href="https://grid.ac/institutes/{{f.id}}" target="_blank">{{f.name}}</a> <a class="badge text-info" title="Tot Publications">{{f.count}}</a></li>
-              {% endfor %}
-              </ol>
-            </div>
+            <li>
+            <a href="https://app.dimensions.ai/details/publication/{{p.id}}" target="_blank" style="color: -darkgoldenrod;" title="{{p.title}}">{{p.title|truncatewords:20}}</a><br />&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank" style="text-transform: uppercase; color: darkgrey;" title="{{p.doi}}">{{p.journal.title}}&nbsp;({{p.year}})&nbsp;</a>&nbsp;<span -class="badge" -style="background: grey;">{{p.times_cited}} citations</span>&nbsp;<a href="javascript:$('#k_{{forloop.counter}}').toggle();" class="badge" style="background: green;">{{p.concepts|length}} concepts</a>
 
+            <div id="k_{{forloop.counter}}" style="display: -none;">
 
-             <div class="well">
-              <b>Top Funders</b>
-              <br>
-              
-              <ol>
-              {% for f in  res.facets.entity_funder %}
-                <li><a href="https://grid.ac/institutes/{{f.id}}" target="_blank">{{f.name}}</a> <a class="badge text-info" title="Tot Publications">{{f.count}}</a></li>
-              {% endfor %}
-                </ol>
-            </div>
-
-
-
-
-
-
-          </div>
-
-        <div class="col-md-8" style="margin-top: 10px;">
-
-
-              <h5>Top Papers</h5>
-              <hr>
-
-              
-              {% for p in res.publications  %}
-
-                  <li style="margin-bottom: 10px;">
-                    
-                    
-                    {{p.type|upper}}&nbsp;<span class="lead" style="color: darkgoldenrod;">{{p.title}}</span><br />&nbsp;<span style="text-transform: uppercase; color: grey;">{{p.journal.title}}</span>&nbsp;<a href="http://dx.doi.org/{{p.doi}}" target="_blank">{{p.doi}}</a>&nbsp;<span class="badge" style="background: goldenrod;">{{p.times_cited}} citations</span>
-                  
-                  </li>
-
+              {% for c in p.concepts %}
+                <a href="{% url 'dslconcepts:home' %}?query={{c}}{% for x in search_concepts  %}{% if c != x %}AND{{x}}{% endif %}{% endfor %}" style=" color: #888888;"><span class="btn btn-xs" >{{c}}</span></a>
               {% endfor %}
                 
-        </div>
+            </div>
 
-      </div>
+            <hr></li>
+            
+        {% endfor %}
+      </ol>
 
+    </div>
+
+    </div>  
+    {% comment %} row ends {% endcomment %}
 
     {% endif %}
-      
 
 
 
