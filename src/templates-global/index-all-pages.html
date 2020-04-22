@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+  {% block bodycontent %}
+
+  <div class="page-header">
+    Home
+  </div>
+
+  <div class="container">
+
+
+      <div class="row">
+
+		<h4>Listing out all locations on <code>urls.py</code></h4>
+		
+        {% for x in  myUrls %}
+          <li><a href="{{x}}">{{x}}</a></li> 
+        {% endfor %}
+          
+
+      </div>
+
+
+  </div> <!-- /container -->
+
+
+{% endblock bodycontent %}

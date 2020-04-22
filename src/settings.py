@@ -32,10 +32,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # ..
-    'dbpedialinks',
-    'zerohunger',
     'd3exp',
+    'dbpedialinks',
     'dslconcepts',
+    'html_fun',
+    'zerohunger',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +54,7 @@ ROOT_URLCONF = 'urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SITE_ROOT, 'templates')],
+        'DIRS': [os.path.join(SITE_ROOT, 'src', 'templates-global')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

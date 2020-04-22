@@ -1,0 +1,71 @@
+{% extends "html_fun/base.html" %}
+
+{% load static %}
+
+{% block navbar %}
+
+    {% with thispage="home" %}
+
+    {% include "html_fun/default-navbar.html" %}
+
+    {% endwith %}
+
+{% endblock navbar %}
+
+
+  {% block bodycontent %}
+
+  <div class="page-header">
+    Home
+  </div>
+
+  <div class="container">
+
+
+      <div class="row">
+
+        <h4>Static Experiments</h4>
+        <hr>
+
+
+        <p>TIP: use the <code>/html_fun/static/filename</code> folder to render HTML files as is </p>
+
+        
+        {% for x in  static_templates %}
+          <li><a href="static/{{x}}">/static/{{x}}</a></li> 
+        {% endfor %}
+          
+
+      </div>
+
+
+
+      <div class="row" style="margin-top: 50px;">
+
+        <h4>Dynamic Experiments</h4>
+        <hr>
+
+
+        <p>memo: this list is managed manually in the template</p>
+
+
+        <li><a href="{% url 'html_fun:fun' %}">fun with words</a>, words of increasing size</li> 
+  
+        <li><a href="{% url 'html_fun:colors' %}">fun with colors</a>, simple colored bars</li> 
+
+        <li><a href="{% url 'html_fun:clock' %}">clock-screen</a>, old idea to have visual representation of time using full screen space</li> 
+  
+        <li><a href="{% url 'html_fun:typer' %}">typer.js</a> test just to see how it works</li> 
+        
+        <li><a href="{% url 'html_fun:visuals' %}">visuals</a> random animated gifs produce a pretty cool effect</li> 
+
+
+      </div>
+
+
+
+
+  </div> <!-- /container -->
+
+
+{% endblock bodycontent %}
