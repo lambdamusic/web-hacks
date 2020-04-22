@@ -13,11 +13,14 @@
 
       <div class="row">
 
-		<h4>Listing out all locations on <code>urls.py</code></h4>
-		
+		<h4>Applications found in <code>urls.py</code></h4>
+
+        <div class="col-md-5" style="margin-top: 30px;">
         {% for x in  myUrls %}
           <li><a href="{{x}}">{{x}}</a></li> 
         {% endfor %}
+        </div>
+		
           
 
       </div>
