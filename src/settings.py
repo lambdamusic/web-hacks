@@ -35,7 +35,9 @@ INSTALLED_APPS = [
     'd3exp',
     'dbpedialinks',
     'dslconcepts',
+    'extempore',
     'html_fun',
+    'metamodel',
     'zerohunger',
 ]
 

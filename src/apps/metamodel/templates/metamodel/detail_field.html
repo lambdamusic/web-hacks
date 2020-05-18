@@ -1,0 +1,107 @@
+{% extends "metamodel/base.html" %}
+
+{% load static %}
+
+{% block navbar %}
+
+    {% with thispage="detail_field" %}
+
+    {% include "metamodel/default-navbar.html" %}
+
+    {% endwith %}
+
+{% endblock navbar %}
+
+
+  {% block bodycontent %}
+
+
+
+  <div class="page-header">
+    Field Detail
+  </div>
+
+  <div class="container">
+
+
+      <div class="row">
+
+        <div class="col-md-3">
+        
+                <h4>Opts</h4>
+                <hr>
+
+              <form action="{% url 'metamodel:home'%}" method="get">
+              <div id="custom-search-input">
+                      <div class="input-group col-md-10">
+                          <input type="text" class="search-query form-control" placeholder="Search" name="q" id="q" value="{{ q|default:'' }}" />
+                          <span class="input-group-btn">
+                              <button class="btn btn-danger" type="button">
+                                  <span class=" glyphicon glyphicon-search"></span>
+                              </button>
+                          </span>
+                      </div>
+                  </div>
+              </form>
+
+              <br /><br />
+              <h5>Similar fields</h5>
+              {% for x in similar %}
+                
+                {% if x.id != field.id %}
+                  <li><a href="{% url 'metamodel:detail' x.id %}?q={{ q|default:'' }}">{{x.source}} / {{x.name}}</a></li>
+                  
+                {% endif %}
+  
+                
+              {% endfor %}
+                
+
+        </div>
+
+        <div class="col-md-9">
+        
+                <h4>{{field.source|upper}} / {{field.name|upper}}</h4>
+                <hr>
+
+                <h5>name</h5>
+                <li>{{field.name}} (<a href="{% url 'admin:metamodel_metafield_change' field.id %}">Update</a>)</li>
+                <h5>description</h5>
+                <li>{{field.desc}}</li>
+                <h5>solr_field</h5>
+                <li><code>{{field.solr_field}}</code></li>
+                <h5>deprecated</h5>
+                <li>{{field.deprecated}}</li>
+
+                <br />
+                <h4>Implementations</h4>
+                <hr>
+                
+                {% for impl in field.implementation_set.all %}
+
+                    <h4><b>{{impl.platform}}</b></h4>
+                    <li><code>{{impl.name}}</code> (type: {{impl.field_type}})</li>
+                  
+                {% endfor %}
+                  
+
+
+
+              </div>
+
+        </div>
+
+        </div>  <!-- /row -->
+
+
+
+    <div class="row">
+    &nbsp;
+    </div>
+
+
+
+  </div> <!-- /container -->
+
+
+{% endblock bodycontent %}
