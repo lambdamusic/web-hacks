@@ -28,8 +28,7 @@
 
         <div class="col-md-3">
         
-                <h4>Opts</h4>
-                <hr>
+              <br />
 
               <form action="{% url 'metamodel:home'%}" method="get">
               <div id="custom-search-input">
@@ -44,25 +43,58 @@
                   </div>
               </form>
 
+
+
+  
+              <div style="margin-top: 50px;">
+                <h4>By Source</h4>
+                <hr>
+                {% for source in  sources_all %}
+                  <li><a href="{% url 'metamodel:home' %}?s={{source}}" {% if s == source %}class="active-filter"{% endif %}>{{source}}</a></li>
+                {% endfor %}
+              </div>
+              
+              <div style="margin-top: 50px;">
+                <h4>By Product</h4>
+                <hr>
+                {% for platform in  platform_all %}
+                  <li><a href="{% url 'metamodel:home' %}?p={{platform}}" {% if p == platform %}class="active-filter"{% endif %}>{{platform}}</a></li>
+                {% endfor %}
+              </div>
+
+
         </div>
 
         <div class="col-md-9">
         
-                <h4>Fields</h4>
+                <h4>MetaFields</h4>
                 <hr>
 
 
-                {% for x in  fields %}
-                  
-                  {% ifchanged x.source %}
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>N</th>
+                      <th>Source</th>
+                      <th>Field Name</th>
+                      <th>Products</th>
+                    </tr>
+                  </thead> 
+                  <tbody>
 
-                      <h4>{{x.source}}</h4>
-                    
-                  {% endifchanged %}
-                    
-                  <li><a href="{% url 'metamodel:detail' x.id %}?q={{ q|default:'' }}">{{x.source}} / {{x.name}}</a></li> 
-                {% endfor %}
+                 {% for field in  fields %}
                   
+                    <tr>
+                      <td>{{forloop.counter}}</td>
+                      <td>{{field.source}}</td>
+                      <td><a href="{% url 'metamodel:field-detail' field.id %}?q={{ q|default:'' }}">{{field.name}}</a></td>
+                      <td>{% for impl in field.implementation_set.all %}{{impl.platform|capfirst}}{% if not forloop.last %}, {% endif %}{% endfor %}</td>
+                    </tr>
+
+                {% endfor %}
+
+                  </tbody>
+                </table>
 
               </div>
 

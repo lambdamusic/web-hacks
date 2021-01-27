@@ -16,9 +16,9 @@
   {% block bodycontent %}
 
 
-
   <div class="page-header">
-    Field Detail
+    {{field.source|upper}} > {{field.name}}
+    
   </div>
 
   <div class="container">
@@ -27,9 +27,8 @@
       <div class="row">
 
         <div class="col-md-3">
-        
-                <h4>Opts</h4>
-                <hr>
+
+              <br />
 
               <form action="{% url 'metamodel:home'%}" method="get">
               <div id="custom-search-input">
@@ -49,7 +48,7 @@
               {% for x in similar %}
                 
                 {% if x.id != field.id %}
-                  <li><a href="{% url 'metamodel:detail' x.id %}?q={{ q|default:'' }}">{{x.source}} / {{x.name}}</a></li>
+                  <li><a href="{% url 'metamodel:field-detail' x.id %}?q={{ q|default:'' }}">{{x.source}} / {{x.name}}</a></li>
                   
                 {% endif %}
   
@@ -59,31 +58,101 @@
 
         </div>
 
+      
+
+
         <div class="col-md-9">
         
-                <h4>{{field.source|upper}} / {{field.name|upper}}</h4>
+                <h4>{{field.name|upper}}
+                  (<a href="{% url 'metamodel:home' %}?s={{field.source}}" >{{field.source|upper}}</a>)
+                  
+                  {% if is_admin_user %}                    
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="" style="font-size: 80%;">
+                    <a href="{% url 'admin:metamodel_metafield_change' field.id %}">edit record</a></span>                                
+                  {% endif %}
+                </h4>
                 <hr>
 
-                <h5>name</h5>
-                <li>{{field.name}} (<a href="{% url 'admin:metamodel_metafield_change' field.id %}">Update</a>)</li>
-                <h5>description</h5>
-                <li>{{field.desc}}</li>
-                <h5>solr_field</h5>
-                <li><code>{{field.solr_field}}</code></li>
-                <h5>deprecated</h5>
-                <li>{{field.deprecated}}</li>
 
-                <br />
-                <h4>Implementations</h4>
-                <hr>
+                  <table class="table table-striped table-hover table-bordered">
+                  {% comment %} <thead>
+                    <tr>
+                      <th>Pred</th>
+                      <th>Val</th>
+                    </tr>
+                  </thead> {% endcomment %}
+                  <tbody>
+                    <tr>
+                      <td><b>Name</b></td>
+                      <td><code>{{field.name}}</code> </td>
+                    </tr>
+                    <tr>
+                      <td><b>Source</b></td>
+                      <td>{{field.source|upper}}</td>
+                    </tr>
+                    <tr>
+                      <td><b>Description</b></td>
+                      <td>{{field.desc}}</td>
+                    </tr>
+                    <tr>
+                      <td><b>Solr_field</b></td>
+                      <td><code>{{field.solr_field}}</code></td>
+                    </tr>
+                    <tr>
+                      <td><b>Deprecated</b></td>
+                      <td>{{field.deprecated}}</td>
+                    </tr>
+                    <tr>
+                      <td><b>Available in</b></td>
+                      <td>{% for impl in field.implementation_set.all %}{{impl.platform|capfirst}}{% if not forloop.last %}, {% endif %}{% endfor %}</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+
+                <div style="margin-top: 50px;">
+
+                  <h4>Implementation Details</h4>
+                  <hr>
+                  
+                  {% for impl in field.implementation_set.all %}
+                      
+                      <div style="margin-top: 20px;" class="well">
+                      <h4><b>{{impl.platform|capfirst}}</b></h4>
+                      <li>Name: <code>{{impl.name}}</code></li>
+                      <li>Datatype: {{impl.field_type|default:"--"}}</li>
+                      </div>
+                    
+                  {% endfor %}
+                  
+
                 
-                {% for impl in field.implementation_set.all %}
+                {% if 0 %}
+                  {% comment %} test with table {% endcomment %}
+                <table class="table table-striped table-hover table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Field Name</th>
+                      <th>Datatype</th>
+                    </tr>
+                  </thead> 
+                  <tbody>
+                   {% for impl in field.implementation_set.all %}
+                     <tr>
+                      <td><b>{{impl.platform}}</b></td>
+                      <td><code>{{impl.name}}</code> (<a href="{% url 'admin:metamodel_implementation_change' field.id %}">Update</a>)</td>
+                      <td>{{impl.field_type|default:"--"}}</td>
+                    </tr>
 
-                    <h4><b>{{impl.platform}}</b></h4>
-                    <li><code>{{impl.name}}</code> (type: {{impl.field_type}})</li>
-                  
-                {% endfor %}
-                  
+                  {% endfor %}
+
+                  </tbody>
+                </table>
+                {% endif %}
+
+                
+                </div>
 
 
 
